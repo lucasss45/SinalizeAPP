@@ -1,0 +1,68 @@
+.food-lover {
+	display: grid;
+	grid-template-columns: 20% 10% 70%;
+	margin: 100px auto;
+}
+
+.food-lover article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 40px;
+}
+
+.food-lover article > h2 {
+	font-family: "SulSans", sans-serif;
+	font-size: 2.25rem;
+	line-height: 2.75rem;
+	color: var(--title);
+	margin-bottom: 20px;
+}
+
+.food-lover article > p {
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--text);
+	margin-bottom: 20px;
+}
+.food-lover article > a > button {
+	color: var(--white);
+	font-family: "SulSans Bold", sans-serif;
+	background-color: var(--red-default);
+	padding: 17px 33px;
+	border-radius: 5px;
+	border: none;
+}
+
+.food-lover article > a > button:hover {
+	background-color: var(--hover-red);
+}
+
+.food-lover img {
+	width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+	.food-lover {
+		display: grid;
+		grid-template-columns: 100%;
+		padding: 100px 20px;
+	}
+	.food-lover img {
+		display: none;
+	}
+}
+
+.banner-ifood-card {
+	margin: 0 auto;
+}
+
+.banner-ifood-card img {
+	width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+	.banner-ifood-card {
+		display: none;
+	}
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- SEO -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<meta
+			name="description"
+			content="iFood é uma empresa brasileira fundada em 2011, atuante no ramo de entrega de comida pela internet, sendo líder no setor na América Latina, com presença na Argentina, no México e na Colômbia. "
+		/>
+		<meta
+			name="keywords"
+			content="ifood, restaurantes, comida, empresa, IFood, aplicativo, lanches, fast food, delivery"
+		/>
+
+		<meta
+			property="og:url"
+			content="https://miguelrisquelme.github.io/uiclone-ifood/"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Delivery de comida e Mercado - iFood" />
+		<meta
+			property="og:description"
+			content="iFood é uma empresa brasileira fundada em 2011, atuante no ramo de entrega de comida pela internet, sendo líder no setor na América Latina, com presença na Argentina, no México e na Colômbia. "
+		/>
+		<meta
+			property="og:image"
+			content="data:image/jpeg;base64,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"
+		/>
+		<title>Delivery de comida e Mercado - iFood</title>
+
+		<!-- STYLES -->
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/colors.css" />
+		<link rel="stylesheet" href="./css/general.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/search.css" />
+		<link rel="stylesheet" href="./css/options.css" />
+		<link rel="stylesheet" href="./css/food-links.css" />
+		<link rel="stylesheet" href="./css/food-lover.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+
+		<!-- FONTS -->
+		<link rel="stylesheet" href="./assets/fonts/SulSans/font-sulsans.css" />
+	</head>
+	<body>
+		<header class="header-menu">
+			<nav class="container">
+				<ul>
+					<li>
+						<img src="./assets/img/logo.svg" alt="Logo IFood" />
+					</li>
+					<li>
+						<a href="https://entregador.ifood.com.br/"> Entregador </a>
+					</li>
+					<li>
+						<a href="https://parceiros.ifood.com.br/">
+							Restaurante e Mercado
+						</a>
+					</li>
+					<li>
+						<a href="https://www.ifood.com.br/carreiras"> Carreiras </a>
+					</li>
+					<li>
+						<a
+							href="https://empresas.ifood.com.br/ifood-refeicao?utm_source=home_ifood&utm_medium=referral&utm_campaign=botao_header"
+						>
+							iFood Empresas
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://www.ifood.com.br/entrar"> criar conta </a>
+					</li>
+					<li>
+						<a href="https://www.ifood.com.br/entrar"> Entrar </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="search">
+				<div class="title-search">
+					<h1>Tudo pra facilitar seu dia a dia</h1>
+					<p>O que você precisa está aqui. Peça e receba onde estiver.</p>
+				</div>
+				<div>
+					<form class="search-input">
+						<img src="./assets/icons/location.svg" alt="Location Icon" />
+						<input type="text" placeholder="Endereço de entrega e número" />
+					</form>
+					<button class="button-search">Buscar</button>
+				</div>
+			</section>
+			<section class="options">
+				<div class="container-options">
+					<div class="cards-options">
+						<a
+							href="https://www.ifood.com.br/lista-restaurantes"
+							class="card-option"
+						>
+							<h2>Restaurante</h2>
+							<button>Ver opções &gt;</button>
+							<img
+								src="https://static-images.ifood.com.br/image/upload/f_auto/webapp/landingV2/restaurant.png"
+								alt="Imagem de um Hamburguer"
+							/>
+						</a>
+						<a href="https://www.ifood.com.br/mercados" class="card-option">
+							<h2>Mercado</h2>
+							<button>Buscar lojas &gt;</button>
+							<img
+								src="https://static-images.ifood.com.br/image/upload/f_auto/webapp/landingV2/market.png"
+								alt="Imagem de um carrinho de compras com legumes dentro"
+							/>
+						</a>
+					</div>
+					<div class="mini-cards-options">
+						<a href="https://www.ifood.com.br/bebidas" class="mini-card">
+							<figure>
+								<img
+									src="https://static-images.ifood.com.br/image/upload/f_auto/webapp/landingV2/drinks.png"
+									alt=""
+								/>
+							</figure>
+							<span>Bebidas</span>
+						</a>
+						<a href="https://www.ifood.com.br/farmacia" class="mini-card">
+							<figure>
+								<img
+									src="https://static-images.ifood.com.br/image/upload/f_auto/webapp/landingV2/pharmacy.png"
+									alt=""
+								/>
+							</figure>
+							<span>Farmácia</span>
+						</a>
+						<a href="https://www.ifood.com.br/conveniencia" class="mini-card">
+							<figure>
+								<img
+									src="https://static-images.ifood.com.br/image/upload/f_auto/webapp/landingV2/convenience.png"
+									alt=""
+								/>
+							</figure>
+							<span>Conveniência</span>
+						</a>
+						<a href="https://www.ifood.com.br/petshop" class="mini-card">
+							<figure>
+								<img
+									src="https://static-images.ifood.com.br/image/upload/f_auto/webapp/landingV2/petshop.png"
+									alt=""
+								/>
+							</figure>
+							<span>Pet shop</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="food-links container">
+				<div class="food-link">
+					<img
+						class="food-link-bg"
+						src="https://www.ifood.com.br/static/images/landing-v2/link-background.svg"
+						alt=""
+					/>
+					<article>
+						<h2>A sua fome de crescer ta no iFood</h2>
+						<p>Cadastre seu restaurante ou o seu mercado</p>
+						<a href="https://entregador.ifood.com.br/">
+							<button>Saiba mais</button>
+						</a>
+					</article>
+					<img
+						class="food-link-img"
+						src="https://www.ifood.com.br/static/images/landing-v2/delivery-man.svg"
+						alt=""
+					/>
+				</div>
+				<div class="food-link">
+					<img
+						class="food-link-bg"
+						src="https://www.ifood.com.br/static/images/landing-v2/link-background.svg"
+						alt="Imagem de uma mulher segurando um capacete"
+					/>
+					<article>
+						<h2>Quer fazer entregas pelo iFood?</h2>
+						<p>Faça agora o seu cadastro e comece o quanto antes.</p>
+						<a href="https://parceiros.ifood.com.br/">
+							<button>Saiba mais</button>
+						</a>
+					</article>
+					<img
+						class="food-link-img"
+						src="https://www.ifood.com.br/static/images/landing-v2/store.svg"
+						alt="Imagem de uma loja"
+					/>
+				</div>
+			</section>
+			<section class="food-lover container">
+				<article>
+					<h2>Você tem fome do quê?</h2>
+					<p>
+						Descubra como é ser um FoodLover e faça parte da nossa revolução!
+					</p>
+					<a href="https://institucional.ifood.com.br/carreiras/">
+						<button>Saiba mais</button>
+					</a>
+				</article>
+				<div></div>
+				<img
+					src="https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landingV2/food-lover-banner.jpg"
+					alt="Food Lovers dentro de quadrados"
+				/>
+			</section>
+			<div class="banner-ifood-card container">
+				<a href="https://ifood.givex.com/e-gifts/?utm_source=home_ifood_banner">
+					<img
+						src="https://static-images.ifood.com.br/image/upload/t_banner,q_100/webapp/landing/ifood-mothers-day-banner-desktop.png"
+						alt="iFood Card presente para sua mãe"
+					/>
+				</a>
+			</div>
+		</main>
+		<footer class="container">
+			<section class="cities">
+				<div>
+					<h2>Explore por cidades</h2>
+					<a href="https://www.ifood.com.br/cidades-atendidas">Veja mais</a>
+				</div>
+				<ul>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/belo-horizonte-mg"
+							title="Belo Horizonte"
+							>Belo Horizonte</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/brasilia-df"
+							title="Brasília"
+							>Brasília</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/campinas-sp"
+							title="Campinas"
+							>Campinas</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/curitiba-pr"
+							title="Curitiba"
+							>Curitiba</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/goiania-go"
+							title="Goiânia"
+							>Goiânia</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/guarulhos-sp"
+							title="Guarulhos"
+							>Guarulhos</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/joao-pessoa-pb"
+							title="oão Pessoa"
+							>João Pessoa</a
+						>
+					</li>
+					<li>
+						<a href="https://www.ifood.com.br/delivery/natal-rn" title="Natal"
+							>Natal</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/niteroi-rj"
+							title="Niterói"
+							>Niterói</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/porto-alegre-rs"
+							title="Porto Alegre"
+							>Porto Alegre</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/ribeirao-preto-sp"
+							title="Ribeirão Preto"
+							>Ribeirão Preto</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj"
+							title="Rio de Janeiro"
+							>Rio de Janeiro</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/salvador-ba"
+							title="Salvador"
+							>Salvador</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/santo-andre-sp"
+							title="Santo André"
+							>Santo André</a
+						>
+					</li>
+					<li>
+						<a href="https://www.ifood.com.br/delivery/santos-sp" title="Santos"
+							>Santos</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/sao-bernardo-do-campo-sp"
+							title="São Bernado do Campo"
+							>São Bernado do Campo</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/sao-caetano-do-sul-sp"
+							title="São Caetano do Sul"
+							>São Caetano do Sul</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.br/delivery/sao-paulo-sp"
+							title="São Paulo"
+							>São Paulo</a
+						>
+					</li>
+				</ul>
+			</section>
+			<section class="footer-about">
+				<ul>
+					<li><b>iFood</b></li>
+					<li>
+						<a href="https://institucional.ifood.com.br/?utm_source=site_ifood"
+							>Site Institucional</a
+						>
+					</li>
+					<li><a href="https://www.ifood.com.br/ajuda">Fale conosco</a></li>
+					<li>
+						<a
+							href="https://institucional.ifood.com.br/carreiras?utm_source=site_ifood"
+							>Carreiras</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ifood.com.co/?utm_source=Site_iFood&utm_medium=Site_iFood&utm_campaign=iFood-Rodape"
+							>iFood Colômbia</a
+						>
+					</li>
+				</ul>
+				<ul>
+					<li><b>Descubra</b></li>
+					<li>
+						<a href="https://parceiros.ifood.com.br/"
+							>Cadastre seu Restaurante ou Mercado</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://shop.ifood.com.br/?utm_source=Site_iFood&utm_medium=Site_iFood&utm_campaign=iFoodShop-Rodape"
+							>iFood Shop</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://empresas.ifood.com.br/ifood-refeicao?utm_source=home_ifood&utm_medium=referral&utm_campaign=botao_footer"
+							>iFood Empresas</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://blog-empresas.ifood.com.br/?utm_source=home_ifood&utm_medium=referral&utm_campaign=botao_footer"
+							>Blog iFood Empresas</a
+						>
+					</li>
+				</ul>
+				<ul>
+					<li><b>Social</b></li>
+					<li><a href="https://www.facebook.com/iFood/">Facebook</a></li>
+					<li><a href="https://twitter.com/ifood">Instagram</a></li>
+					<li>
+						<a href="https://www.youtube.com/user/ifooddelivery">Twitter</a>
+					</li>
+					<li><a href="https://www.instagram.com/ifoodbrasil/">Youtube</a></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</section>
+			<section class="food-copy">
+				<ul>
+					<li>
+						<img src="./assets/img/logo.svg" alt="Logo marca iFood" />
+					</li>
+					<li>
+						<small>
+							© Copyright 2021 - iFood - Todos os direitos reservados iFood com
+							Agência de Restaurantes Online S.A. CNPJ 14.380.200/0001-21 /
+							<br />
+							Avenida dos Autonomistas, nº 1496, Vila Yara, Osasco/SP - CEP
+							06.020-902
+						</small>
+					</li>
+					<li>
+						<a href="https://www.ifood.com.br/termos"
+							>Termo e condições de uso</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://institucional.ifood.com.br/abrindo-a-cozinha/codigo-de-etica"
+							>Código de conduta</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://institucional.ifood.com.br/abrindo-a-cozinha/declaracao-privacidade-clientes/"
+							>Privacidade</a
+						>
+					</li>
+					<li>
+						<a href="https://www.ifood.com.br/seguranca">Dicas de segurança</a>
+					</li>
+				</ul>
+			</section>
+		</footer>
+	</body>
+</html>
