@@ -1,0 +1,25 @@
+.Down{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+	height: auto;
+	border-top: 1px solid #fff;
+	background-color: #000;
+	position: fixed;
+}
+
+.Down .menu img{
+	width: 30px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.Down.menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #fff;
+}
