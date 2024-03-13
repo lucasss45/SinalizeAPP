@@ -4,15 +4,55 @@
     --corTerciaria: #101010;
     --corQuartiaria: #222222;
     --corQuintenraia: #7b7b7b;
-    --fontePrimaria: "Dela Gothic One";
+    --corSextiaria: #ababab;
+    --corSeptiaria: #ffffff;
+    --fontePrimaria: 'Dela Gothic One', sans-serif;
     --fonteSecundaria: Arial, Helvetica, sans-serif; 
-}
-
- @font-face { 
-    font-family: "Dela Gothic One"; src:('C:\Users\Aluno\Documents\GitHub\Lib_\Design\Design Alpha 1.9\Fonte\Dela_Gothic_One\DelaGothicOne-Regular.ttf'); 
 } 
 
-h1{
-    font-family: "Dela Gothic One";
+.dela-gothic one-regular {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    font-family: var(--fonteSecundaria);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: var(--corPrincipal);
+    height: fit-content; 
 }
   
+header h1{
+    font-family: 'Dela Gothic One', sans-serif;
+    color: var(--corSeptiaria);
+}
+
+.logo{
+    height: 6vh;
+    width: 6vh;
+}
+
+.hamburguer-round{
+    width: 6vh;
+    height: 6vh;
+}
+
+.pagenamebar{
+    background-color: var(--corSeptiaria);
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    box-shadow: 0vh 1vh 2vh var(--corSextiaria);
+}
+
+h3{
+    font-family: 'Dela Gothic One', sans-serif;
+    color: var(--corQuintenraia)!important;
+}
+
