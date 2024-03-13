@@ -1,0 +1,18 @@
+:root{
+    --corPrincipal: #ffc200;
+    --corSecundaria: #ff9900;
+    --corTerciaria: #101010;
+    --corQuartiaria: #222222;
+    --corQuintenraia: #7b7b7b;
+    --fontePrimaria: "Dela Gothic One";
+    --fonteSecundaria: Arial, Helvetica, sans-serif; 
+}
+
+ @font-face { 
+    font-family: "Dela Gothic One"; src:('C:\Users\Aluno\Documents\GitHub\Lib_\Design\Design Alpha 1.9\Fonte\Dela_Gothic_One\DelaGothicOne-Regular.ttf'); 
+} 
+
+h1{
+    font-family: "Dela Gothic One";
+}
+  
