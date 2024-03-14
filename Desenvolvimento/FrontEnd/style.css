@@ -56,3 +56,15 @@ h3{
     color: var(--corQuintenraia)!important;
 }
 
+footer{
+    background-color: var(--corSeptiaria);
+    height: fit-content;
+    width: 100%;
+    padding: 3vh;
+    box-shadow: 0vh -1vh 2vh var(--corSextiaria);
+}
+
+footer img{
+    height: 6vh;
+    width: 6vh;
+}
