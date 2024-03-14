@@ -9,14 +9,18 @@ Sinalize é um aplicativo inovador desenvolvido para ensinar língua de sinais d
 - **Matérias Originais**: Explore conteúdos originais sobre o tema, incluindo artigos, entrevistas e notícias relevantes.
 - **Exercícios Práticos**: Pratique suas habilidades com exercícios interativos e desafios divertidos.
 - **Comunidade**: Conecte-se com outros usuários, compartilhe experiências e participe de discussões.
+
 ## Tecnologia:
-HTML;
-CSS;
-JS;
-Bootstrap;
-Python;
-Banco de Dados;
-PHP;
+
+![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![SQL](https://img.shields.io/badge/sql-black?style=for-the-badge&logo=mysql)
+![HTML5](https://img.shields.io/badge/html5-black?style=for-the-badge&logo=html5)
+![CSS](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)
+![Bootstrap](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)
+![Bd](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+
 ## Equipe de Desenvolvimento
 
 👨‍💻 Augusto Feltrin [@AugustoFeltrin](https://github.com/AugustoFeltrin)  
