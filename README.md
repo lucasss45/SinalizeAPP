@@ -9,7 +9,14 @@ Sinalize é um aplicativo inovador desenvolvido para ensinar língua de sinais d
 - **Matérias Originais**: Explore conteúdos originais sobre o tema, incluindo artigos, entrevistas e notícias relevantes.
 - **Exercícios Práticos**: Pratique suas habilidades com exercícios interativos e desafios divertidos.
 - **Comunidade**: Conecte-se com outros usuários, compartilhe experiências e participe de discussões.
-
+## Tecnologia:
+HTML;
+CSS;
+JS;
+Bootstrap;
+Python;
+Banco de Dados;
+PHP;
 ## Equipe de Desenvolvimento
 
 👨‍💻 Augusto Feltrin [@AugustoFeltrin](https://github.com/AugustoFeltrin)  
