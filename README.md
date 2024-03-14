@@ -14,20 +14,21 @@ Sinalize é um aplicativo inovador desenvolvido para ensinar língua de sinais d
 
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![SQL](https://img.shields.io/badge/sql-black?style=for-the-badge&logo=mysql)
-![HTML5](https://img.shields.io/badge/html5-black?style=for-the-badge&logo=html5)
-![CSS](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)
-![Bootstrap](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)
-![Bd](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)
+![SQL](https://img.shields.io/badge/sql-white?style=for-the-badge&logo=mysql)
+![HTML5](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Bd](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 ## Equipe de Desenvolvimento
 
-👨‍💻 Augusto Feltrin [@AugustoFeltrin](https://github.com/AugustoFeltrin)  
-👨‍💻 Henrique Cruz [@CRUZ1807](https://github.com/CRUZ1807)  
-👩‍💻 Kali Gomes [@Kali-Gomes](https://github.com/Kali-Gomes)  
-👨‍💻 Lucas Vizeu [@lucasss45](https://github.com/lucasss45)
+👨‍💻💻 Augusto Feltrin [@AugustoFeltrin](https://github.com/AugustoFeltrin)  
+👨‍💻💻 Lucas Vizeu [@lucasss45](https://github.com/lucasss45)
+👨‍💻💻 Henrique Cruz [@CRUZ1807](https://github.com/CRUZ1807)  
+👩‍💻💻 Kali Gomes [@Kali-Gomes](https://github.com/Kali-Gomes)  
 
-## Projeto Escolar
 
-Este projeto é um trabalho realizado como parte do currículo do Senac Distrito Criativo.
+## Projeto 
+
+Este projeto é um trabalho realizado como parte da realização pratica do proposto no nosso artigo cientifico "Libras e Inclussão".
