@@ -1,9 +1,10 @@
+<?php
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro Usuario</title>
 </head>
 <body>
     <header class="d-flex justify-content-between p-1">
@@ -12,7 +13,7 @@
         <img class="logo img-fluid" src="Imagens/Logo_SinalizeV2.png" alt="LogoSinalize">
     </header>
     <main>
-        <h2>Registro do Usuario</h2>
+        <h2>Registro Usuario</h2>
         <form action="registro.php" method="post">
             <label>Nome: </label>
             <input type="text" name="nome" required>
@@ -25,3 +26,5 @@
     </main>
 </body>
 </html>
+
+?>
