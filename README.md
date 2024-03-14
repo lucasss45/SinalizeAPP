@@ -24,7 +24,7 @@ Sinalize é um aplicativo inovador desenvolvido para ensinar língua de sinais d
 ## Equipe de Desenvolvimento
 
 👨‍💻💻 Augusto Feltrin [@AugustoFeltrin](https://github.com/AugustoFeltrin)  
-👨‍💻💻 Lucas Vizeu [@lucasss45](https://github.com/lucasss45)
+👨‍💻💻 Lucas Vizeu [@lucasss45](https://github.com/lucasss45) 
 👨‍💻💻 Henrique Cruz [@CRUZ1807](https://github.com/CRUZ1807)  
 👩‍💻💻 Kali Gomes [@Kali-Gomes](https://github.com/Kali-Gomes)  
 
