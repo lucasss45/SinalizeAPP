@@ -68,3 +68,12 @@ footer img{
     height: 6vh;
     width: 6vh;
 }
+
+.logo-login{
+    height: 20vh;
+    width: 20vh;
+}
+
+.logo-login-title{
+    font-family: 'Dela Gothic One', sans-serif;
+}
