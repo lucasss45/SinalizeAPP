@@ -56,6 +56,28 @@ h3{
     color: var(--corQuintenraia)!important;
 }
 
+main{
+    margin-bottom: 3vh;
+}
+
+main img{
+    max-width: 25vh;
+    max-height: 25vh;
+    margin: 5vh;
+}
+
+main .inputs input{
+    margin: 1vh;
+    border: radial-gradient(top left, white, black);
+    border-radius: 2vh;
+    padding: 0.5vh;
+    max-width: 50vh;
+}
+
+#Nascimento{
+    width: 36.5vh;
+}
+
 footer{
     background-color: var(--corSeptiaria);
     height: fit-content;
