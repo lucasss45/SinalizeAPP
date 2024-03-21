@@ -58,12 +58,19 @@ h3{
 
 main{
     margin-bottom: 3vh;
+    align-items: center;
 }
 
 main img{
-    max-width: 25vh;
-    max-height: 25vh;
+    max-width: 30vh;
+    max-height: 30vh;
     margin: 5vh;
+}
+
+main .inputs{
+    max-width: 60vh;
+    min-width: 25vh;
+    height: auto;
 }
 
 main .inputs input{
@@ -71,7 +78,18 @@ main .inputs input{
     border: radial-gradient(top left, white, black);
     border-radius: 2vh;
     padding: 0.5vh;
-    max-width: 50vh;
+    max-width: 45vh;
+}
+
+main .inputs input::placeholder{
+    color: black;
+}
+
+main #Data{
+    width: fit-content;
+    padding-left: auto;
+    padding-right: 7.5vh;
+    /*min-width: 20vh;*/
 }
 
 #Nascimento{
