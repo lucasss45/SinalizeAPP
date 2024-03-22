@@ -116,3 +116,9 @@ footer img{
 .logo-login-title{
     font-family: 'Dela Gothic One', sans-serif;
 }
+
+.btn-login{
+    background: rgb(255,153,0);
+    background: linear-gradient(90deg, rgba(255,153,0,1) 0%, rgba(255,194,0,1) 100%);
+    border: none; 
+}
