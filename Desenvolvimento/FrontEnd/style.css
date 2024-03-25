@@ -72,19 +72,17 @@ main .inputs{
     align-items: center;
     padding: 5vh;
     position: relative;
-    left: 25vh;
+    left: 20%;
 }
 
 main input{
-    margin-left: 3vh;
-    margin-right: 5vh;
-    margin-bottom: 1vh;
+    margin: 1.5vh;
     border-radius: 5vh;
     border: solid 1.5px black;
     box-shadow: 7px 7px 5px black;
-    color: white;
     padding: 0.5vh;
     max-width: 40vh;
+    min-width: 20vh;
 }
 
 main .inputs input::placeholder{
