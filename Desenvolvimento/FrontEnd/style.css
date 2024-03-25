@@ -66,13 +66,13 @@ main img{
     max-height: 35vh;
     margin: 5vh;
     position: relative;
-    right: 1vh;
+    right: 1vh; 
 }
 main .inputs{
     align-items: center;
     padding: 5vh;
     position: relative;
-    left: 37vh;
+    left: 25vh;
 }
 
 main input{
@@ -80,8 +80,8 @@ main input{
     margin-right: 5vh;
     margin-bottom: 1vh;
     border-radius: 5vh;
-    border: solid 1px black;
-    background: linear-gradient(black, white);
+    border: solid 1.5px black;
+    box-shadow: 7px 7px 5px black;
     color: white;
     padding: 0.5vh;
     max-width: 40vh;
