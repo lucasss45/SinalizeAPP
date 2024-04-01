@@ -58,6 +58,7 @@ h3{
 
 main{
     margin-bottom: 3vh;
+    padding: 2vh;
     align-items: center;
 }
 
@@ -80,13 +81,32 @@ main input{
     border-radius: 5vh;
     border: solid 1.5px black;
     box-shadow: 7px 7px 5px black;
-    padding: 0.5vh;
-    max-width: 40vh;
+    padding: 1vh;
+    max-width: 50vh;
     min-width: 20vh;
 }
 
 main .inputs input::placeholder{
     color: black;
+}
+
+main button{
+    background-color: var(--corPrincipal);
+    font-size: x-large;
+    box-shadow: 7px 7px 5px black;
+    padding: 1vh;
+    max-width: 30vh;
+    min-width: 20vh;
+}
+
+main a{
+    position: relative;
+    left: 5vh;
+    font-size: large;
+}
+
+main p{
+    max-width: 60%;
 }
 
 #Nascimento{
