@@ -1,0 +1,142 @@
+:root{
+    --corPrincipal: #ffc200;
+    --corSecundaria: #ff9900;
+    --corTerciaria: #101010;
+    --corQuartiaria: #222222;
+    --corQuintenraia: #7b7b7b;
+    --corSextiaria: #ababab;
+    --corSeptiaria: #ffffff;
+    --fontePrimaria: 'Dela Gothic One', sans-serif;
+    --fonteSecundaria: Arial, Helvetica, sans-serif; 
+} 
+
+.dela-gothic one-regular {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    font-family: var(--fonteSecundaria);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: var(--corPrincipal);
+    height: fit-content; 
+}
+  
+header h1{
+    font-family: 'Dela Gothic One', sans-serif;
+    color: var(--corSeptiaria);
+}
+
+.logo{
+    height: 6vh;
+    width: 6vh;
+}
+
+.hamburguer-round{
+    width: 6vh;
+    height: 6vh;
+}
+
+.pagenamebar{
+    background-color: var(--corSeptiaria);
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    box-shadow: 0vh 1vh 2vh var(--corSextiaria);
+}
+
+h3{
+    font-family: 'Dela Gothic One', sans-serif;
+    color: var(--corQuintenraia)!important;
+}
+
+main{
+    margin-bottom: 3vh;
+    padding: 2vh;
+    align-items: center;
+}
+
+main img{
+    max-width: 35vh;
+    max-height: 35vh;
+    margin: 5vh;
+    position: relative;
+    right: 1vh; 
+}
+main .inputs{
+    align-items: center;
+    padding: 5vh;
+    position: relative;
+    left: 20%;
+}
+
+main input{
+    margin: 1.5vh;
+    border-radius: 5vh;
+    border: solid 1.5px black;
+    box-shadow: 7px 7px 5px black;
+    padding: 1vh;
+    max-width: 50vh;
+    min-width: 20vh;
+}
+
+main .inputs input::placeholder{
+    color: black;
+}
+
+main button{
+    background-color: var(--corPrincipal);
+    font-size: x-large;
+    box-shadow: 7px 7px 5px black;
+    padding: 1vh;
+    max-width: 30vh;
+    min-width: 20vh;
+}
+
+main a{
+    position: relative;
+    left: 5vh;
+    font-size: large;
+}
+
+main p{
+    max-width: 60%;
+}
+
+#Nascimento{
+    width: 36.5vh;
+}
+
+footer{
+    background-color: var(--corSeptiaria);
+    height: fit-content;
+    width: 100%;
+    padding: 3vh;
+    box-shadow: 0vh -1vh 2vh var(--corSextiaria);
+}
+
+footer img{
+    height: 6vh;
+    width: 6vh;
+}
+
+.logo-login{
+    height: 20vh;
+    width: 20vh;
+}
+
+.logo-login-title{
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+.btn-login{
+    background: rgb(255,153,0);
+    background: linear-gradient(90deg, rgba(255,153,0,1) 0%, rgba(255,194,0,1) 100%);
+    border: none; 
+}
