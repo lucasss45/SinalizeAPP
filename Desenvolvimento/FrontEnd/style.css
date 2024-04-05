@@ -56,6 +56,11 @@ h3{
     color: var(--corQuintenraia)!important;
 }
 
+h4{
+    font-family: 'Dela Gothic One', sans-serif;
+    color: var(--corQuintenraia)!important;
+}
+
 main{
     margin-bottom: 3vh;
     padding: 2vh;
@@ -94,6 +99,7 @@ main button{
     background-color: var(--corPrincipal);
     font-size: x-large;
     box-shadow: 7px 7px 5px black;
+    border-radius: 25px;
     padding: 1vh;
     max-width: 30vh;
     min-width: 20vh;
@@ -107,6 +113,77 @@ main a{
 
 main p{
     max-width: 60%;
+}
+
+.switch {
+    visibility: hidden;
+}
+
+.switch__container{
+    position: relative;
+    border: 4vh;
+    background-color: var(--corSextiaria);
+    border-radius: 10px;
+    max-width: fit-content;
+    max-height: fit-content;
+    min-width: 60%;
+    padding: 1vh;
+}
+
+label{
+    position: relative;
+    bottom: 4vh;
+    left: 25%;
+}
+
+.switch + label {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch--shadow + label {
+    padding: 0.5vh;
+    max-width: 10vh;
+    max-height: 5vh;
+    width: relative;
+    height: relative;
+    min-width: 2vh;
+    min-height: 5vh;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: '';
+}
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: all 0.4s;
+}
+.switch--shadow + label:after {
+  width: 5vh;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+
+.switch--shadow:checked + label:before {
+    background-color: #8ce196;
+}
+.switch--shadow:checked + label:after {
+    transform: translateX(4.6vh);
 }
 
 #Nascimento{
