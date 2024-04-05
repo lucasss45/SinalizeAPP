@@ -213,7 +213,27 @@ footer img{
 }
 
 .btn-login{
-    background: rgb(255,153,0);
-    background: linear-gradient(90deg, rgba(255,153,0,1) 0%, rgba(255,194,0,1) 100%);
+    background: var(--corPrincipal);
+    background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
     border: none; 
+}
+
+.campoLogin{
+    border: solid var(--corSextiaria) 0.2vh;
+    border-radius: 10vh;
+    padding: 1.5vh;
+    height: 6vh;
+    -webkit-box-shadow: 10px 10px 15px -6px var(--corSextiaria);
+    -moz-box-shadow: 10px 10px 15px -6px var(--corSextiaria);
+    box-shadow: 10px 10px 15px -6px var(--corSextiaria);
+}
+
+.btnSend{
+    color: var(--corTerciaria);
+    font-weight: 700;
+    border-radius: 10vh;
+    padding: 1.5vh;
+    -webkit-box-shadow: 10px 10px 15px -6px var(--corSextiaria);
+    -moz-box-shadow: 10px 10px 15px -6px var(--corSextiaria);
+    box-shadow: 10px 10px 15px -6px var(--corSextiaria);
 }
