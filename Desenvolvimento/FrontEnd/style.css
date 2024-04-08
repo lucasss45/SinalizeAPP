@@ -35,11 +35,13 @@ header h1{
 }
 
 .logo{
+    margin: 0.8vh; 
     height: 6vh;
     width: 6vh;
 }
 
 .hamburguer-round{
+    margin: 0.8vh; 
     width: 6vh;
     height: 6vh;
 }
@@ -48,7 +50,6 @@ header h1{
     background-color: var(--corSeptiaria);
     border-bottom-left-radius: 3vh;
     border-bottom-right-radius: 3vh;
-    box-shadow: 0vh 1vh 2vh var(--corSextiaria);
 }
 
 h3{
@@ -85,7 +86,6 @@ main input{
     margin: 1.5vh;
     border-radius: 5vh;
     border: solid 1.5px black;
-    box-shadow: 7px 7px 5px black;
     padding: 1vh;
     max-width: 50vh;
     min-width: 20vh;
@@ -98,7 +98,6 @@ main .inputs input::placeholder{
 main button{
     background-color: var(--corPrincipal);
     font-size: x-large;
-    box-shadow: 7px 7px 5px black;
     border-radius: 25px;
     padding: 1vh;
     max-width: 30vh;
@@ -175,7 +174,6 @@ label{
   width: 5vh;
   background-color: #fff;
   border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.4s;
 }
 
@@ -195,7 +193,6 @@ footer{
     height: fit-content;
     width: 100%;
     padding: 3vh;
-    box-shadow: 0vh -1vh 2vh var(--corSextiaria);
 }
 
 footer img{
@@ -223,9 +220,6 @@ footer img{
     border-radius: 10vh;
     padding: 1.5vh;
     height: 6vh;
-    -webkit-box-shadow: 10px 10px 15px -6px var(--corSextiaria);
-    -moz-box-shadow: 10px 10px 15px -6px var(--corSextiaria);
-    box-shadow: 10px 10px 15px -6px var(--corSextiaria);
 }
 
 .btnSend{
@@ -233,7 +227,4 @@ footer img{
     font-weight: 700;
     border-radius: 10vh;
     padding: 1.5vh;
-    -webkit-box-shadow: 10px 10px 15px -6px var(--corSextiaria);
-    -moz-box-shadow: 10px 10px 15px -6px var(--corSextiaria);
-    box-shadow: 10px 10px 15px -6px var(--corSextiaria);
 }
