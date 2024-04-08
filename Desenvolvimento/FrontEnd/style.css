@@ -57,9 +57,11 @@ h3{
     color: var(--corQuintenraia)!important;
 }
 
-h4{
+p{
     font-family: 'Dela Gothic One', sans-serif;
     color: var(--corQuintenraia)!important;
+    position: relative;
+    top: 2vh;
 }
 
 main{
@@ -114,8 +116,24 @@ main p{
     max-width: 60%;
 }
 
+#div0{
+    max-height: max-content;
+}
+
+#div{
+    display: inline-flex;
+    width: auto;
+    max-height: 7vh;
+}
+
+#div2{
+    position: relative;
+    left: 60%;
+    bottom: 30%;
+}
+
 .switch {
-    visibility: hidden;
+    display: none;
 }
 
 .switch__container{
@@ -123,16 +141,10 @@ main p{
     border: 4vh;
     background-color: var(--corSextiaria);
     border-radius: 10px;
-    max-width: fit-content;
-    max-height: fit-content;
+    max-width: min-content;
+    max-height: min-content;
     min-width: 60%;
     padding: 1vh;
-}
-
-label{
-    position: relative;
-    bottom: 4vh;
-    left: 25%;
 }
 
 .switch + label {
