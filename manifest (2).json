@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "sinalize-app.vercel",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "sinalize-app.vercel",
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
