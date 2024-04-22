@@ -46,12 +46,6 @@ header h1{
     height: 6vh;
 }
 
-.pagenamebar{
-    background-color: var(--corSeptiaria);
-    border-bottom-left-radius: 3vh;
-    border-bottom-right-radius: 3vh;
-}
-
 h3{
     font-family: 'Dela Gothic One', sans-serif;
     color: var(--corQuintenraia)!important;
@@ -248,4 +242,9 @@ footer img{
     font-weight: 700;
     border-radius: 10vh;
     padding: 1.5vh;
+}
+
+.card-img-top{
+    width: 2vh;
+    height: 15vh;
 }
