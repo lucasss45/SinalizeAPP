@@ -73,6 +73,17 @@ main{
     align-items: center;
 }
 
+.main{
+    position: relative;
+    left: 20.5%;
+    top: 10%;
+}
+
+.main p{
+    position: relative;
+    right: 10%;
+}
+
 main img{
     max-width: 35vh;
     max-height: 35vh;
