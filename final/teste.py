@@ -97,3 +97,31 @@ pontos = []
 tamanho = cv2.resize(frame, (frameLargura, frameAltura))
 mapaSuave = cv2.GaussianBlur(tamanho, (3, 3), 0, 0)
 fundo = np.uint8(mapaSuave > limite)
+
+
+for i in range(nPontos):
+    mapaConfianca = saida[0, i, :, :]
+    mapaConfianca = cv2.resize(mapaConfianca, (frameLargura, frameAltura))
+
+    minVal, confianca, minLoc, ponto = cv2.minMaxLoc(mapaConfianca)
+
+    if confianca > limite:
+        cv2.circle(frameCopia, (int(ponto[0]), int(ponto[1])), 5, corPonto_A, thickness=espessura, lineType=cv2.FILLED)
+        cv2.putText(frameCopia, ' ' + (str(int(ponto[0]))) + ',' + str(int(ponto[1])), (int(ponto[0]), int(ponto[1])),
+                    fonte, 0.3, corTxtAprov, 0, lineType=cv2.LINE_AA)
+
+        cv2.circle(frame, (int(ponto[0]), int(ponto[1])), tamCircle, corPonto_A, thickness=espessura,
+                   lineType=cv2.FILLED)
+        cv2.putText(frame, ' ' + "{}".format(i), (int(ponto[0]), int(ponto[1])), cv2.FONT_HERSHEY_SIMPLEX, 0.3,
+                    corTxtAprov, 0, lineType=cv2.LINE_AA)
+
+        cv2.circle(fundo, (int(ponto[0]), int(ponto[1])), tamCircle, corPonto_A, thickness=espessura,
+                   lineType=cv2.FILLED)
+        cv2.putText(fundo, ' ' + "{}".format(i), (int(ponto[0]), int(ponto[1])), cv2.FONT_HERSHEY_SIMPLEX, 0.3,
+                    corTxtAprov, 0, lineType=cv2.LINE_AA)
+
+        pontos.append((int(ponto[0]), int(ponto[1])))
+
+    else:
+        pontos.append((0, 0))
+
