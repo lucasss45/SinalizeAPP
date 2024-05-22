@@ -1,64 +1,46 @@
 import time
+import sys
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-
-import extrator_POSICAO as posicao
-import extrator_ALTURA as altura
-import extrator_PROXIMIDADE as proximidade
-import alfabeto
-import sys
-from IPython.display import HTML
 from base64 import b64decode
 import io
 from PIL import Image
 
+# Adicione o caminho da pasta de módulos
 sys.path.append(r'C:\Users\Win10\Desktop\IA\final\content\modulos')
 
-# Verificar se o caminho foi adicionado corretamente
+# Verifique se o caminho foi adicionado corretamente
 print(sys.path)
 
 import extrator_POSICAO as posicao
-import extrator_ALTURA as altura
-import extrator_PROXIMIDADE as proximidade
+import extrator_ALTURA como altura
+import extrator_PROXIMIDADE como proximidade
 import alfabeto
 
+# Função para capturar uma imagem da webcam
+def take_photo():
+    cap = cv2.VideoCapture(0)
+    if not cap.isOpened():
+        raise IOError("Cannot open webcam")
+    
+    ret, frame = cap.read()
+    if not ret:
+        raise IOError("Cannot read from webcam")
+    
+    cap.release()
+    cv2.destroyAllWindows()
+    
+    return frame
 
-VIDEO_HTML = """
-<video autoplay
- width=%d height=%d style='cursor: pointer;'></video>
-<script>
-var video = document.querySelector('video')
-navigator.mediaDevices.getUserMedia({ video: true })
-  .then(stream => video.srcObject = stream)
-var data = new Promise(resolve => {
-  video.onclick = () => {
-    var canvas = document.createElement('canvas')
-    var [w, h] = [video.offsetWidth, video.offsetHeight]
-    canvas.width = w
-    canvas.height = h
-    canvas.getContext('2d')
-          .drawImage(video, 0, 0, w, h)
-    video.srcObject.getVideoTracks()[0].stop()
-    video.replaceWith(canvas)
-    resolve(canvas.toDataURL('image/jpeg', %f))
-  }
-})
-</script>
-"""
+# Captura da imagem
+frame = take_photo()
 
-def take_photo(filename='photo.jpg', quality=2, size=(400,300)):
-  display(HTML(VIDEO_HTML % (size[0], size[1], quality)))
-  data = eval_js("data")
-  binary = b64decode(data.split(',')[1])
-  f = io.BytesIO(binary)
-  return np.asarray(Image.open(f))
-
-cap = take_photo()  # Clicar na imagem da webcam para tirar uma foto
-
+# Caminhos para os arquivos do modelo
 arquivoProto = r"C:\Users\Win10\Desktop\IA\final\content\pose\hand\pose_deploy.prototxt"
 modeloCaffe = r"C:\Users\Win10\Desktop\IA\final\content\pose\hand\pose_iter_102000.caffemodel"
 
+# Parâmetros de configuração
 nPontos = 22
 PARES_POSE = [[0, 1], [1, 2], [2, 3], [3, 4], [0, 5], [5, 6], [6, 7], [7, 8], [0, 9], [9, 10], [10, 11], [11, 12],
               [0, 13], [13, 14], [14, 15], [15, 16], [0, 17], [17, 18], [18, 19], [19, 20]]
@@ -68,8 +50,6 @@ letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'L', 'M', 'N', 'O', 'P', 'Q', 
 net = cv2.dnn.readNetFromCaffe(arquivoProto, modeloCaffe)
 
 limite = 0.1
-
-frame = cap
 
 frameCopia = np.copy(frame)
 
@@ -97,7 +77,6 @@ pontos = []
 tamanho = cv2.resize(frame, (frameLargura, frameAltura))
 mapaSuave = cv2.GaussianBlur(tamanho, (3, 3), 0, 0)
 fundo = np.uint8(mapaSuave > limite)
-
 
 for i in range(nPontos):
     mapaConfianca = saida[0, i, :, :]
@@ -158,12 +137,21 @@ for i, a in enumerate(alfabeto.letras):
         cv2.putText(frame, '' + letras[i], (50, 50), fonte, 1.5, corTxtAprov, tamFont,
                     lineType=cv2.LINE_AA)
 
-plt.figure(figsize=[7,5])
-plt.imshow(frame)
+# Exibir as imagens
+plt.figure(figsize=[7, 5])
+plt.imshow(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+plt.title("Imagem com pontos e letras")
 
-plt.figure(figsize=[7,5])
+plt.figure(figsize=[7, 5])
 plt.imshow(cv2.cvtColor(frameCopia, cv2.COLOR_BGR2RGB))
+plt.title("Imagem com pontos conectados")
 
-plt.figure(figsize=[7,5])
-plt.imshow(fundo)
+plt.figure(figsize=[7, 5])
+plt.imshow(fundo, cmap='gray')
+plt.title("Imagem de fundo")
 
+plt.show()
+
+print("Tempo total de execução: {:.3f} segundos".format(time.time() - t))
+
+cv2.waitKey(0)
