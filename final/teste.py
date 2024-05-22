@@ -125,3 +125,45 @@ for i in range(nPontos):
     else:
         pontos.append((0, 0))
 
+for par in PARES_POSE:
+    partA = par[0]
+    partB = par[1]
+
+    if pontos[partA] != (0, 0) and pontos[partB] != (0, 0):
+        cv2.line(frameCopia, pontos[partA], pontos[partB], corLinha, tamLine, lineType=cv2.LINE_AA)
+        cv2.line(frame, pontos[partA], pontos[partB], corLinha, tamLine, lineType=cv2.LINE_AA)
+        cv2.line(fundo, pontos[partA], pontos[partB], corLinha, tamLine, lineType=cv2.LINE_AA)
+
+posicao.posicoes = []
+
+# Dedo polegar
+posicao.verificar_posicao_DEDOS(pontos[1:5], 'polegar', altura.verificar_altura_MAO(pontos))
+
+# Dedo indicador
+posicao.verificar_posicao_DEDOS(pontos[5:9], 'indicador', altura.verificar_altura_MAO(pontos))
+
+# Dedo médio
+posicao.verificar_posicao_DEDOS(pontos[9:13], 'medio', altura.verificar_altura_MAO(pontos))
+
+# Dedo anelar
+posicao.verificar_posicao_DEDOS(pontos[13:17], 'anelar', altura.verificar_altura_MAO(pontos))
+
+# Dedo mínimo
+posicao.verificar_posicao_DEDOS(pontos[17:21], 'minimo', altura.verificar_altura_MAO(pontos))
+
+print(proximidade.verificar_proximidade_DEDOS(pontos))
+
+for i, a in enumerate(alfabeto.letras):
+    if proximidade.verificar_proximidade_DEDOS(pontos) == alfabeto.letras[i]:
+        cv2.putText(frame, '' + letras[i], (50, 50), fonte, 1.5, corTxtAprov, tamFont,
+                    lineType=cv2.LINE_AA)
+
+plt.figure(figsize=[7,5])
+plt.imshow(frame)
+
+plt.figure(figsize=[7,5])
+plt.imshow(cv2.cvtColor(frameCopia, cv2.COLOR_BGR2RGB))
+
+plt.figure(figsize=[7,5])
+plt.imshow(fundo)
+
