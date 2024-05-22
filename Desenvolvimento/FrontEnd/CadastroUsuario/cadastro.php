@@ -33,19 +33,18 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<!DOCTYPE html:5>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- CSS LOCAL -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
-     <!-- SCRIPT LOCAL -->
-     <script src="script.js"></script>
-   
+    <!-- SCRIPT LOCAL -->
+    <script src="script.js"></script>
+
     <!-- FONTE -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
@@ -59,30 +58,22 @@ if(isset($_POST['submit'])){
 
 </head>
 <body>
-    <div class="d-flex justify-content-center m-5">
-        <img class="logo-login" src="Imagens/Logo_SinalizeV2.png" alt="LogoSinalize">
-        <h1 class="logo-login-title">SINALIZE</h1>
+    <div class="d-flex flex-column justify-content-center m-5">
+        <img class="logo-login align-self-center m-2" src="../Imagens/Logo_SinalizeV2.png" alt="LogoSinalize">
+        <h1 class="logo-login-title align-self-center">SINALIZE</h1>
+        <p class="welcome-message align-self-center"> Prazer em te conhecer!<br> Por favor insira suas informações</p>
     </div>
-    <form action="cadastro.php" method="post">
-        <h2> Cadastro Usuário</h2>
+    <form action="cadastro.php" method="post" class="d-flex flex-column text-center">
         <div class="inputBox">
-            <label for="nome" class="labelInput">Nome:</label>
-            <input type="text" name="nome" id="nome" class="inputUser" required>
+            <input class="campoLogin w-50 m-2 align-self-center" type="text" name="nome" id="nome" placeholder="Nome..." required>
         </div>
         <div class="inputBox">
-            <label for="email" class="labelInput">Email</label>
-            <input type="text" name="email" id="email" class="inputUser" required>
+            <input class="campoLogin w-50 m-2 align-self-center" type="text" name="email" id="email" placeholder="Email..." required>
         </div>
         <div class="inputBox">
-            <label for="senha" class="labelInput">Senha</label>
-            <input type="password" name="senha" id="senha" class="inputUser" required>
+            <input class="campoLogin w-50 m-2 align-self-center" type="password" name="senha" id="senha" placeholder="Senha..." required>
         </div>
-        <input type="submit" name="submit" id="submit" value="Enviar">
+        <input class="btnSend w-25 m-5 align-self-center btn-login" type="submit" name="submit" value="Enviar">
     </form>
-    <footer class="d-flex justify-content-between position-fixed bottom-0">
-        <img class="placeholder" src="Imagens/placeholder.png" alt="placeholder">
-        <img class="placeholder" src="Imagens/placeholder.png" alt="placeholder">
-        <img class="placeholder" src="Imagens/placeholder.png" alt="placeholder">
-    </footer>
 </body>
 </html>

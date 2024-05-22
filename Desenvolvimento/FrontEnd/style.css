@@ -259,3 +259,51 @@ footer img{
     width: 2vh;
     height: 15vh;
 }
+
+.welcome-message {
+    font-family: var(--fonteSecundaria);
+    color: var(--corQuintenraia);
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 1.2em;
+}
+
+/* Estilo para o link de esqueci meu nome/senha */
+.forgot-link {
+    color: var(--corQuintenraia);
+    text-align: center;
+    display: block;
+    margin-top: 1vh;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o botão de login */
+.btn-login {
+    background: var(--corPrincipal);
+    background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
+    border: none;
+    color: var(--corTerciaria);
+    font-weight: 700;
+    border-radius: 10vh;
+    padding: 1.5vh;
+    width: 50%;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: var(--corSecundaria);
+}
+
+/* Estilo para os campos de login */
+.campoLogin {
+    border: solid var(--corSextiaria) 0.2vh;
+    border-radius: 10vh;
+    padding: 1.5vh;
+    height: 6vh;
+    margin-bottom: 1vh;
+}
