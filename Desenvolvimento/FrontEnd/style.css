@@ -299,11 +299,48 @@ footer img{
     background: var(--corSecundaria);
 }
 
-/* Estilo para os campos de login */
 .campoLogin {
     border: solid var(--corSextiaria) 0.2vh;
     border-radius: 10vh;
     padding: 1.5vh;
     height: 6vh;
     margin-bottom: 1vh;
+}
+
+.dropdown .btn-secondary {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .btn-secondary img {
+    width: 7vh;
+    height: 7vh;
+}
+
+.dropdown-menu {
+    background-color: var(--corPrincipal);
+    color: var(--corTerciaria);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+
+.dropdown-item {
+    background-color: var(--corPrincipal);
+    color: var(--corTerciaria);
+    font-family: var(--fontePrimaria);
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--corSecundaria);
+}
+
+.dropdown-item:hover {
+    background-color: var(--corSecundaria);
+    color: var(--corTerciaria);
 }
