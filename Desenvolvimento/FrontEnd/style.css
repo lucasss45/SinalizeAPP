@@ -1,4 +1,4 @@
-:root{
+:root {
     --corPrincipal: #ffc200;
     --corSecundaria: #ff9900;
     --corTerciaria: #101010;
@@ -8,97 +8,98 @@
     --corSeptiaria: #ffffff;
     --fontePrimaria: 'Dela Gothic One', sans-serif;
     --fonteSecundaria: Arial, Helvetica, sans-serif; 
-} 
+}
 
-.dela-gothic one-regular {
+.dela-gothic-one-regular {
     font-family: 'Dela Gothic One', sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-*{
+* {
     font-family: var(--fonteSecundaria);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
     background-color: var(--corPrincipal);
     height: fit-content; 
 }
-  
-header h1{
+
+header h1 {
     font-family: 'Dela Gothic One', sans-serif;
     color: var(--corSeptiaria);
 }
 
-.logo{
+.logo {
     margin: 0.8vh; 
     height: 6vh;
     width: 6vh;
 }
 
-.hamburguer-round{
+.hamburguer-round {
     margin: 0.8vh; 
     width: 6vh;
     height: 6vh;
 }
 
-h3{
+h3 {
     font-family: 'Dela Gothic One', sans-serif;
-    color: var(--corQuintenraia)!important;
+    color: var(--corQuintenraia) !important;
 }
 
-a{
+a {
     border: solid 4vh none;
 }
 
-h2{
+h2 {
     font-family: 'Dela Gothic One', sans-serif;
-    color: var(--corQuintenraia)!important;
+    color: var(--corQuintenraia) !important;
 }
 
-p{
+p {
     font-family: 'Dela Gothic One', sans-serif;
-    color: var(--corQuintenraia)!important;
+    color: var(--corQuintenraia) !important;
     position: relative;
     top: 2vh;
 }
 
-main{
+main {
     margin-bottom: 3vh;
     padding: 2vh;
     align-items: center;
 }
 
-.main{
+.main {
     position: relative;
     left: 20.5%;
     top: 10%;
 }
 
-.main p{
+.main p {
     position: relative;
     right: 10%;
 }
 
-main img{
+main img {
     max-width: 35vh;
     max-height: 35vh;
     margin: 5vh;
     position: relative;
     right: 1vh; 
 }
-main .inputs{
+
+main .inputs {
     align-items: center;
     padding: 5vh;
     position: relative;
     left: 20%;
 }
 
-main input{
+main input {
     margin: 1.5vh;
     border-radius: 5vh;
     border: solid 1.5px black;
@@ -107,11 +108,11 @@ main input{
     min-width: 20vh;
 }
 
-main .inputs input::placeholder{
+main .inputs input::placeholder {
     color: black;
 }
 
-main button{
+main button {
     background-color: var(--corPrincipal);
     font-size: x-large;
     border-radius: 25px;
@@ -120,27 +121,27 @@ main button{
     min-width: 20vh;
 }
 
-main a{
+main a {
     position: relative;
     left: 5vh;
     font-size: large;
 }
 
-main p{
+main p {
     max-width: 60%;
 }
 
-#div0{
+#div0 {
     max-height: max-content;
 }
 
-#div{
+#div {
     display: inline-flex;
     width: auto;
     max-height: 7vh;
 }
 
-#div2{
+#div2 {
     position: relative;
     left: 60%;
     bottom: 30%;
@@ -150,7 +151,7 @@ main p{
     display: none;
 }
 
-.switch__container{
+.switch__container {
     position: relative;
     border: 4vh;
     background-color: var(--corSextiaria);
@@ -183,79 +184,82 @@ main p{
 
 .switch--shadow + label:before,
 .switch--shadow + label:after {
-  display: block;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  bottom: 1px;
-  content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: '';
 }
+
 .switch--shadow + label:before {
-  right: 1px;
-  background-color: #f1f1f1;
-  border-radius: 60px;
-  transition: all 0.4s;
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: all 0.4s;
 }
+
 .switch--shadow + label:after {
-  width: 5vh;
-  background-color: #fff;
-  border-radius: 100%;
-  transition: all 0.4s;
+    width: 5vh;
+    background-color: #fff;
+    border-radius: 100%;
+    transition: all 0.4s;
 }
 
 .switch--shadow:checked + label:before {
     background-color: #8ce196;
 }
+
 .switch--shadow:checked + label:after {
     transform: translateX(4.6vh);
 }
 
-#Nascimento{
+#Nascimento {
     width: 36.5vh;
 }
 
-footer{
+footer {
     background-color: var(--corSeptiaria);
     height: fit-content;
     width: 100%;
     padding: 3vh;
 }
 
-footer img{
+footer img {
     height: 6vh;
     width: 6vh;
 }
 
-.logo-login{
+.logo-login {
     height: 20vh;
     width: 20vh;
 }
 
-.logo-login-title{
+.logo-login-title {
     font-family: 'Dela Gothic One', sans-serif;
 }
 
-.btn-login{
+.btn-login {
     background: var(--corPrincipal);
     background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
     border: none; 
 }
 
-.campoLogin{
+.campoLogin {
     border: solid var(--corSextiaria) 0.2vh;
     border-radius: 10vh;
     padding: 1.5vh;
     height: 6vh;
 }
 
-.btnSend{
+.btnSend {
     color: var(--corTerciaria);
     font-weight: 700;
     border-radius: 10vh;
     padding: 1.5vh;
 }
 
-.card-img-top{
+.card-img-top {
     width: 2vh;
     height: 15vh;
 }
@@ -268,7 +272,6 @@ footer img{
     font-size: 1.2em;
 }
 
-/* Estilo para o link de esqueci meu nome/senha */
 .forgot-link {
     color: var(--corQuintenraia);
     text-align: center;
@@ -281,7 +284,6 @@ footer img{
     text-decoration: underline;
 }
 
-/* Estilo para o botão de login */
 .btn-login {
     background: var(--corPrincipal);
     background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
@@ -307,6 +309,7 @@ footer img{
     margin-bottom: 1vh;
 }
 
+
 .dropdown .btn-secondary {
     background-color: transparent;
     border: none;
@@ -321,26 +324,28 @@ footer img{
 }
 
 .dropdown-menu {
-    background-color: var(--corPrincipal);
-    color: var(--corTerciaria);
+    background-color: var(--corPrincipal) !important; 
+    color: var(--corTerciaria) !important;  
     border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    box-shadow: 0 4px 8px rgba(82, 229, 255, 0.1);
+    width: 70vw; 
     height: 100vh;
     margin: 0;
     padding: 0;
     left: 0;
+    top: 0;
+    position: absolute;
 }
 
 .dropdown-item {
-    background-color: var(--corPrincipal);
-    color: var(--corTerciaria);
+    background-color: var(--corPrincipal) !important;  
+    color: var(--corSeptiaria) !important;
     font-family: var(--fontePrimaria);
     padding: 1rem 1.5rem;
     border-bottom: 1px solid var(--corSecundaria);
 }
 
 .dropdown-item:hover {
-    background-color: var(--corSecundaria);
-    color: var(--corTerciaria);
+    background-color: var(--corSecundaria) !important;  
+    color: var(--corTerciaria) !important;  
 }
