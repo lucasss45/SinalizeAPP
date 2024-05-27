@@ -40,23 +40,4 @@
             <h1 class="align-self-center text-warp m-1 fs-1">SINALIZE</h1> 
             <img class="logo img-fluid" src="Imagens/Logo_SinalizeV2.png" alt="LogoSinalize">
         </header>
-        <div class="pagenamebar d-flex justify-content-center p-1">
-            <h3 class="align-self-center m-1 fs-5">Dicionário</h3>
-        </div>
     </div>
-
-    <main class="main-1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem, asperiores sunt voluptates culpa molestias. Quasi aspernatur odit, officiis magnam veniam blanditiis reprehenderit voluptatem sit modi praesentium vitae at earum?</p>
-        
-        <div class="container">
-            <h3 class="row">CONTATOS</h3>
-            <h2 style="color: var(--corQuintenraia)!important;" class="row">Github</h2>
-            <a href="https://github.com/AugustoFeltrin" class="col-4">Augusto Rodrigues Feltrin</a>
-            <a href="https://github.com/Kali-Gomes" class="col-4">Kali (Guilherme) Gomes Donato Santos</a>
-            <a href="https://github.com/CRUZ1807" class="col-4">Henrique Costa Cruz</a>
-            <a href="https://github.com/lucasss45" class="col-4">Lucas Godoy Vizeu</a>
-        </div>
-    </main>
-    
-</body>
-</html>
