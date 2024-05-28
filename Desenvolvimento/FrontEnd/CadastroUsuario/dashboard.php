@@ -30,7 +30,7 @@ if (!isset($_SESSION['user_id'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     <!-- TITULO DA PÁGINA -->
-    <title>SINALIZE - DASHBOARD</title>
+    <title>SINALIZE</title>
 <body>
     <div class="d-flex flex-column justify-content-center m-5">
         <img class="logo-login align-self-center m-2" src="../Imagens/Logo_SinalizeV2.png" alt="LogoSinalize">
@@ -39,9 +39,15 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 
     <footer class="d-flex justify-content-between position-fixed bottom-0">
-        <img class="placeholder" src="Imagens/placeholder.png" alt="placeholder">
-        <img class="placeholder" src="Imagens/placeholder.png" alt="placeholder">
-        <img class="placeholder" src="Imagens/placeholder.png" alt="placeholder">
+        <a href="Aulas.php">
+            <img class="placeholder" src="Imagens/AulasImg.png" alt="Aulas">
+        </a>
+        <a href="Tradutor.php">
+            <img class="placeholder" src="Imagens/TradutorImg.png" alt="Tradutor">
+        </a>
+        <a href="Dicionario.php">
+            <img class="placeholder" src="Imagens/DicionarioImg.png" alt="Dicionário">
+        </a>
     </footer>
 </body>
   
