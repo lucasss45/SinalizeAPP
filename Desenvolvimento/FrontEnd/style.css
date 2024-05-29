@@ -346,6 +346,8 @@ footer img {
 }
 
 .dropdown-item:hover {
-    background-color: var(--corSecundaria) !important;  
-    color: var(--corTerciaria) !important;  
+    background-color: var(--corPrincipal) !important;
+    color: var(--corSeptiaria) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

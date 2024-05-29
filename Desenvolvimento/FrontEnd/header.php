@@ -33,8 +33,8 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="CadastroUsuario/dashboard.php">Perfil</a>
-                    <a class="dropdown-item" href="ConfigPágina-Light.html">Configurações</a>
-                    <a class="dropdown-item" href="Contato.html">Contato</a>
+                    <a class="dropdown-item" href="Configuracoes.php">Configurações</a>
+                    <a class="dropdown-item" href="Comunidade.php">Contato</a>
                 </div>
               </div> 
             <h1 class="align-self-center text-warp m-1 fs-1">SINALIZE</h1> 
