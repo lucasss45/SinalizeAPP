@@ -82,7 +82,7 @@ main input{
     border: solid 1.5px black;
     box-shadow: 7px 7px 5px black;
     padding: 1vh;
-    max-width: 50vh;
+    max-width: 80vh;
     min-width: 20vh;
 }
 
@@ -110,19 +110,105 @@ main p{
 }
 
 main .card{
-    /*max-height: 15rem;*/
-    width: 50rem;
+    min-width: 35vh;
+    min-height: 20vh;
+    max-width: 40vh;
+    max-height: 35vh;
+    border: solid var(--corTerciaria) 1px;
+    margin: 1.5vh;
+    margin-bottom: 3.5vh;
+    border-radius: 5vh;
+    box-shadow: 7px 7px 5px var(--corSecundaria);
+    padding: 2vh;
 }
 
-#pesquisa{
-    background-size: 25px 25px;
-    background-position: 10px 9px;
+#Pesquisa{
+    width: 90%;
+    position: relative;
+    left: 28.5%;
+    background-size: 30px 30px;
+    background-position: 10px 5px;
     background-repeat: no-repeat;
-    background-image: url("Lupa.png");
+    background-image: url("Design/Design\ Alpha\ 1.9/Imagens/Lupa.png");
+    margin-bottom: 5vh;
+    box-shadow: 7px 7px 5px var(--corSecundaria);
 }
 
-#pesquisa::placeholder{
-    align-self: center;
+#Pesquisa::placeholder{
+    font-size: 25px;
+    position: absolute;
+    left: 30%;
+    top: 0.5vh;
+}
+
+.card h5{
+    width: max-content;
+    max-height: 2vh;
+    max-width: 20vh;
+    color: var(--corQuartiaria);
+    position: relative;
+    left: 30%;
+}
+
+.card img{
+    width: max-content;
+    max-width: 10rem;
+    max-height: 10rem;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+#card_1{
+    /*border: solid green;*/
+    position: relative;
+    left: 2vh;
+}
+
+#cards_2{
+    /*border: solid blue;*/
+    margin-bottom: 1.5vh;
+    position: relative;
+}
+
+#Animais{
+    margin-bottom: 5vh;
+}
+
+#Brinquedos{
+    position: relative;
+    bottom: 1.5vh;
+}
+
+#Brinquedos img{
+    max-width: 9rem;
+    max-height: 9rem;
+}
+
+#Brinquedos h5{
+    margin-left: -15px;
+}
+
+/*#Alfabeto{
+}*/
+
+/*#Esportes{
+    
+}*/
+
+#Alimentos h5{
+    left: 25%;
+}
+
+#Calendário h5{
+    left: 20%;
+}
+
+#Ciências{
+    top: 2vh;
+}
+
+#Cores{
+    top: 2vh;
 }
 
 #Nascimento{
