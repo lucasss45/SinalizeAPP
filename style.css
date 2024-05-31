@@ -69,6 +69,11 @@ main{
     position: relative;
     right: 1vh; 
 } */
+
+main a{
+    text-decoration: none;
+}
+
 main .inputs{
     align-items: center;
     padding: 5vh;
@@ -123,9 +128,9 @@ main .card{
 }
 
 #Pesquisa{
-    width: 90%;
+    width: 90vh;
     position: relative;
-    left: 28.5%;
+    left: 34.5%;
     background-size: 30px 30px;
     background-position: 10px 5px;
     background-repeat: no-repeat;
