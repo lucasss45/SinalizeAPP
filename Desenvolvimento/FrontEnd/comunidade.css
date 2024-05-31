@@ -1,0 +1,99 @@
+.comunicado h3 {
+    justify-content: center;
+    display: flex;
+    font-family: var(--fontePrimaria);
+}
+
+.comunicado a {
+    justify-content: center;
+    display: flex;
+    font-family: var(--fontePrimaria);
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.textarea-container textarea {
+    width: 80%; /* adjust the value according to your needs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+.comentarios-section {
+    background-color: transparent;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.comentarios-section h4 {
+    font-family: var(--fontePrimaria);
+    color: var(--corQuintenraia) !important;
+}
+
+.comentarios-section .comentario {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.comentarios-section .comentario .info {
+    font-size: smaller;
+}
+
+.comentarios-section .comentario .info span {
+    font-family: var(--fontePrimaria);
+}
+
+.comentarios-section .comentario p {
+    font-family: var(--fonteSecundaria);
+    margin-top: 5px;
+}
+
+.comentarios-section .comentario .comment-text {
+    font-size: larger;
+}
+
+.comentario-form {
+    margin-bottom: 20px;
+}
+
+.comentario-form form {
+    text-align: center;
+}
+
+.comentario-form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+.comentario-form form input[type="submit"] {
+    background-color: var(--corPrincipal);
+    color: var(--corTerciaria);
+    font-family: var(--fontePrimaria);
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comentario-form form input[type="submit"]:hover {
+    background-color: var(--corSecundaria);
+}
+
+.email-section {
+    background-color: transparent;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.texto-section {
+    padding: 20px;
+}

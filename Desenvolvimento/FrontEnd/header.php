@@ -34,7 +34,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="CadastroUsuario/dashboard.php">Perfil</a>
                     <a class="dropdown-item" href="Configuracoes.php">Configurações</a>
-                    <a class="dropdown-item" href="Comunidade.php">Contato</a>
+                    <a class="dropdown-item" href="Comunidade.php">Comunidade</a>
                 </div>
               </div> 
             <h1 class="align-self-center text-warp m-1 fs-1">SINALIZE</h1> 

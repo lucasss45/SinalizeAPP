@@ -1,3 +1,4 @@
+/* Definição das variáveis */
 :root {
     --corPrincipal: #ffc200;
     --corSecundaria: #ff9900;
@@ -10,12 +11,14 @@
     --fonteSecundaria: Arial, Helvetica, sans-serif; 
 }
 
+/* Fonte Dela Gothic One */
 .dela-gothic-one-regular {
     font-family: 'Dela Gothic One', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Reset CSS */
 * {
     font-family: var(--fonteSecundaria);
     margin: 0;
@@ -23,6 +26,7 @@
     box-sizing: border-box;
 }
 
+/* Estilos do header */
 header {
     display: flex;
     background-color: var(--corPrincipal);
@@ -130,6 +134,7 @@ main a {
 main p {
     max-width: 60%;
 }
+/* Definições adicionais */
 
 #div0 {
     max-height: max-content;
@@ -147,6 +152,7 @@ main p {
     bottom: 30%;
 }
 
+/* Switches */
 .switch {
     display: none;
 }
@@ -218,6 +224,7 @@ main p {
     width: 36.5vh;
 }
 
+/* Estilos do footer */
 footer {
     background-color: var(--corSeptiaria);
     height: fit-content;
@@ -230,6 +237,7 @@ footer img {
     width: 6vh;
 }
 
+/* Estilos do formulário de login */
 .logo-login {
     height: 20vh;
     width: 20vh;
@@ -308,8 +316,7 @@ footer img {
     height: 6vh;
     margin-bottom: 1vh;
 }
-
-
+/* Dropdown */
 .dropdown .btn-secondary {
     background-color: transparent;
     border: none;
@@ -350,4 +357,92 @@ footer img {
     color: var(--corSeptiaria) !important;
     transform: translateY(-3px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.textarea-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.textarea-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    justify-content: center;
+    display: flex;
+}
+
+.comentarios-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.comentarios-section h4 {
+    font-family: var(--fontePrimaria) !important;
+    color: var(--corQuintenraia) !important;
+}
+
+.comentarios-section .comentario {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.comentarios-section .comentario .info {
+    font-size: smaller;
+}
+
+.comentarios-section .comentario .info span {
+    font-family: var(--fontePrimaria);
+}
+
+.comentarios-section .comentario p {
+    font-family: var(--fonteSecundaria);
+    margin-top: 5px;
+}
+
+.comentarios-section .comentario .comment-text {
+    font-size: larger;
+}
+
+.comentario-form {
+    margin-bottom: 20px;
+}
+
+.comentario-form form {
+    text-align: center;
+}
+
+.comentario-form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+.comentario-form form input[type="submit"] {
+    background-color: var(--corPrincipal);
+    color: var(--corTerciaria);
+    font-family: var(--fontePrimaria);
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comentario-form form input[type="submit"]:hover {
+    background-color: var(--corSecundaria);
+}
+
+.email-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.texto-section {
+    padding: 20px;
 }
