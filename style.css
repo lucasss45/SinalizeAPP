@@ -72,6 +72,7 @@ main{
 
 main a{
     text-decoration: none;
+    color: var(--corQuintenraia);
 }
 
 main .inputs{
@@ -83,7 +84,7 @@ main .inputs{
 
 main input{
     margin: 1.5vh;
-    border-radius: 5vh;
+    border-radius: 1vh;
     border: solid 1.5px black;
     box-shadow: 7px 7px 5px black;
     padding: 1vh;
@@ -127,7 +128,7 @@ main .card{
     padding: 2vh;
 }
 
-#Pesquisa{
+.Pesquisa{
     width: 90vh;
     position: relative;
     left: 54vh;
@@ -139,7 +140,7 @@ main .card{
     box-shadow: 7px 7px 5px var(--corSecundaria);
 }
 
-#Pesquisa::placeholder{
+.Pesquisa::placeholder{
     font-size: 25px;
     position: absolute;
     left: 30%;
@@ -219,6 +220,43 @@ main .card{
 #Nascimento{
     width: 36.5vh;
 }
+
+/* Página exemplo */
+#pesquisa{
+    left: 3vh;
+}
+
+#blank{
+    position: relative;
+    bottom: 1vh;
+    left: 52vh;
+    width: max-content;
+    min-width: 91.5vh;
+    min-height: 15vh;
+    max-height: 50vh;
+}
+
+main a img{
+    position: relative;
+    top: 0.5vh;
+    width: auto;
+    height: auto;
+    max-width: 9vh;
+    max-height: 9vh;
+    min-width: 5vh;
+    min-height: 5vh;
+}
+
+#Voltar{
+    margin: 1.5vh;
+    border-radius: 1vh;
+    border: solid 1.5px black;
+    box-shadow: 7px 7px 5px var(--corSecundaria);
+    padding: 1vh;
+
+}
+
+/* -------------- */
 
 footer{
     background-color: var(--corSeptiaria);
