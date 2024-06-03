@@ -84,6 +84,29 @@
     cursor: pointer;
 }
 
+.comentario-form form select {
+        background-color: var(--corPrincipal);
+        color: var(--corTerciaria);
+        font-family: var(--fontePrimaria);
+        font-size: larger;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .select-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .select-container label {
+        font-family: var(--fontePrimaria);
+        font-size: larger;
+    }
+
 .comentario-form form input[type="submit"]:hover {
     background-color: var(--corSecundaria);
 }
@@ -94,6 +117,11 @@
     border-bottom: 1px solid #ccc;
 }
 
-.texto-section {
-    padding: 20px;
+.input-group{
+    
+    display: flex;
+    gap: 5%;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    margin: 0 auto; /* adiciona um margin automático para centralizar */
 }
