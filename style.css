@@ -7,7 +7,8 @@
     --corSextiaria: #ababab;
     --corSeptiaria: #ffffff;
     --fontePrimaria: 'Dela Gothic One', sans-serif;
-    --fonteSecundaria: Arial, Helvetica, sans-serif; 
+    --fonteSecundaria: Arial, Helvetica, sans-serif;
+    
 } 
 
 .dela-gothic one-regular {
@@ -18,8 +19,8 @@
 
 *{
     font-family: var(--fonteSecundaria);
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0px;
     box-sizing: border-box;
 }
 
