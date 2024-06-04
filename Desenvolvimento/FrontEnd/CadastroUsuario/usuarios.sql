@@ -4,4 +4,4 @@ CREATE TABLE usuarios (
     Email varchar(120) NOT NULL,
     Senha varchar(120) NOT NULL,
     PRIMARY KEY (ID)
-) DEFAULTCHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
