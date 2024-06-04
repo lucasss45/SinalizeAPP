@@ -92,5 +92,6 @@ foreach ($topicos as $topico => $comentarios) {
     }
 }
 
+
 $conexao->close();
 ?>
