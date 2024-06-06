@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         novaBolhaUsuario.textContent = mensagem;
         chat.appendChild(novaBolhaUsuario);
 
-        const resposta = obterInformacoesDoTemaSimulado(mensagem.toLowerCase());
+        const resposta = await obterRespostaDoServidor(mensagem);
         const novaBolhaBot = criaBolhaBot();
         novaBolhaBot.innerHTML = resposta;
         chat.appendChild(novaBolhaBot);
@@ -30,30 +30,20 @@ document.addEventListener("DOMContentLoaded", function () {
         vaiParaFinalDoChat();
     }
 
-    function obterInformacoesDoTemaSimulado(tema) {
-        const dadosSimulados = {
-            temas: {
-                "saudacoes": {
-                    "como dizer olá em diferentes idiomas": "Olá! em inglês é Hello, em espanhol é Hola, em francês é Bonjour, em alemão é Hallo, e assim por diante.",
-                    "oi": "Oi! Como posso ajudar hoje?",
-                    // ... Outras respostas ...
+    async function obterRespostaDoServidor(mensagem) {
+        try {
+            const response = await fetch('http://127.0.0.1:5000/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
                 },
-                // Adicione outros temas conforme necessário
-            },
-            respostas_simuladas: [
-                "Não entendi, pode reformular a pergunta?",
-                "Desculpe, não posso responder a isso no momento.",
-                // ... Outras respostas simuladas ...
-            ],
-        };
-
-        const informacoes = dadosSimulados.temas[tema];
-
-        if (informacoes) {
-            return informacoes.join('<br>');
-        } else {
-            const respostasSimuladas = dadosSimulados.respostas_simuladas;
-            return respostasSimuladas[Math.floor(Math.random() * respostasSimuladas.length)];
+                body: JSON.stringify({ msg: mensagem }),
+            });
+            const data = await response.json();
+            return data.resposta;
+        } catch (error) {
+            console.error('Erro:', error);
+            return 'Desculpe, ocorreu um erro.';
         }
     }
 
@@ -73,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         chat.scrollTop = chat.scrollHeight;
     }
 });
+
 // let chat = document.querySelector('#chat');
 // let input = document.querySelector('#input');
 // let botaoEnviar = document.querySelector('#botao-enviar');
