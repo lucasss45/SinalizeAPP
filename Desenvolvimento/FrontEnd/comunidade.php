@@ -3,7 +3,6 @@ session_start();
 include 'header.php';
 ?>
 
-<link rel="stylesheet" href="comunidade.css">
 <div class="container">
     <div class="email-section">
         <section class="comunicado">
