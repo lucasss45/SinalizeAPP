@@ -277,7 +277,6 @@ footer img {
     color: var(--corQuintenraia);
     text-align: center;
     margin-top: 1vh;
-    font-size: 1.2em;
 }
 
 .forgot-link {
@@ -316,7 +315,7 @@ footer img {
     height: 6vh;
     margin-bottom: 1vh;
 }
-/* Dropdown */
+
 .dropdown .btn-secondary {
     background-color: transparent;
     border: none;
@@ -332,10 +331,7 @@ footer img {
 
 .dropdown-menu {
     background-color: var(--corPrincipal) !important; 
-    color: var(--corTerciaria) !important;  
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(82, 229, 255, 0.1);
-    width: 70vw; 
+    width: 40vh; 
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -348,16 +344,18 @@ footer img {
     background-color: var(--corPrincipal) !important;  
     color: var(--corSeptiaria) !important;
     font-family: var(--fontePrimaria);
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid var(--corSecundaria);
+    padding: 9vh;
+    border-bottom: 0.1vh solid var(--corSecundaria);
 }
 
 .dropdown-item:hover {
     background-color: var(--corPrincipal) !important;
     color: var(--corSeptiaria) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.3vh);
+    box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
 }
+
+
 .textarea-container {
     display: flex;
     justify-content: center;
