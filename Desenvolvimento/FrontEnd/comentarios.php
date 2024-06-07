@@ -78,20 +78,22 @@ while ($row = $result->fetch_assoc()) {
     $topicos[$row['Topico']][] = $row;
 }
 
+echo "<div class='comentarios-section'>";
 foreach ($topicos as $topico => $comentarios) {
     echo "<h4>$topico</h4>";
     foreach ($comentarios as $comentario) {
         $data = date('d/m/Y', strtotime($comentario['Submit_Date']));
-        echo "<p><strong>". $comentario['Nome']. "</strong> - ". $data. "</p>";
-        echo "<p>". $comentario['Comentario']. "</p>";
+        echo "<div class='comentario'>";
+        echo "<p class='info'><span><strong>" . $comentario['Nome'] . " - " . $data . "</strong></span></p>";
+        echo "<p class='comentario-texto'>". $comentario['Comentario']. "</p>";
         echo "<button class='curtir-btn' data-comentario-id='".$comentario['ID']."'>Curtir</button>";
         echo "<span class='curtidas'>";
         echo isset($comentario['Curtidas']) ? $comentario['Curtidas'] : '0'; 
         echo " curtidas</span>";
-        echo "<hr>";
+        echo "</div><hr>";
     }
 }
-
+echo "</div>";
 
 $conexao->close();
 ?>
