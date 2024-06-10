@@ -8,7 +8,7 @@
     --corSextiaria: #ababab;
     --corSeptiaria: #ffffff;
     --fontePrimaria: 'Dela Gothic One', sans-serif;
-    --fonteSecundaria: Arial, Helvetica, sans-serif; 
+    --fonteSecundaria: 'Roboto', sans-serif;
 }
 
 /* Fonte Dela Gothic One */
@@ -18,7 +18,81 @@
     font-style: normal;
 }
 
-/* Reset CSS */
+/* Fonte Roboto */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+  /* Reset CSS */
 * {
     font-family: var(--fonteSecundaria);
     margin: 0;
@@ -27,31 +101,52 @@
 }
 
 /* Estilos do header */
+
 header {
-    display: flex;
-    background-color: var(--corPrincipal);
     height: fit-content; 
 }
 
-header h1 {
-    font-family: 'Dela Gothic One', sans-serif;
-    color: var(--corSeptiaria);
+.HamburguerMenu{
+    width: 5vh;
+    height: 5vh;
 }
 
-.logo {
-    margin: 0.8vh; 
-    height: 6vh;
-    width: 6vh;
+.SearchBar{
+    padding: 2vh;
+    width: 100%;
+    height: 5vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--corQuartiaria);
+    border-radius: 4vh;
+    transition: 0.3s;
 }
 
-.hamburguer-round {
-    margin: 0.8vh; 
-    width: 6vh;
-    height: 6vh;
+.ProfileButton{
+    float: right;
+    width: 5vh;
+    height: 5vh;
 }
 
+/* Estilos Aside */
+aside{
+    float: left;
+    height: 100%;
+}
+
+aside img{
+    width: 5vh;
+    height: 5vh;
+}
+
+.TradImg{
+    width: 7vh;
+    height: 7vh;
+}
+
+/* Main */
 h3 {
-    font-family: 'Dela Gothic One', sans-serif;
+    font-family: var(--fonteSecundaria);
     color: var(--corQuintenraia) !important;
 }
 
