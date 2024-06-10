@@ -1,0 +1,71 @@
+.food-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	margin: 120px auto 0px auto;
+}
+
+.food-link {
+	width: 40%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.food-link article {
+	width: 50%;
+	top: -40px;
+	bottom: 0;
+	position: absolute;
+	right: -20px;
+}
+
+.food-link article > h2 {
+	font-family: "SulSans", sans-serif;
+	font-size: 2.25rem;
+	line-height: 2.75rem;
+	color: var(--title);
+	margin-bottom: 20px;
+}
+
+.food-link article > p {
+	font-size: 1rem;
+	line-height: 1.25rem;
+	color: var(--text);
+	margin-bottom: 20px;
+}
+.food-link article > a > button {
+	color: var(--white);
+	font-family: "SulSans Bold", sans-serif;
+	background-color: var(--red-default);
+	padding: 17px 33px;
+	border-radius: 5px;
+	border: none;
+}
+
+.food-link article > a > button:hover {
+	background-color: var(--hover-red);
+}
+
+.food-link-img {
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+	.food-links {
+		height: 800px;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.food-link {
+		width: 90%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}

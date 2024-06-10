@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "SulSans", sans-serif;
+}
+html,
+body,
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+button,
+a {
+	cursor: pointer;
+}
+:root {
+}

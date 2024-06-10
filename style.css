@@ -1,4 +1,4 @@
-:root{
+:root {
     --corPrincipal: #ffc200;
     --corSecundaria: #ff9900;
     --corTerciaria: #101010;
@@ -7,281 +7,97 @@
     --corSextiaria: #ababab;
     --corSeptiaria: #ffffff;
     --fontePrimaria: 'Dela Gothic One', sans-serif;
-    --fonteSecundaria: Arial, Helvetica, sans-serif; 
-} 
+    --fonteSecundaria: Arial, Helvetica, sans-serif;
+}
 
-.dela-gothic one-regular {
-    font-family: 'Dela Gothic One', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-*{
+* {
     font-family: var(--fonteSecundaria);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+body {
     display: flex;
-    background-color: var(--corPrincipal);
-    height: fit-content; 
-}
-  
-header h1{
-    font-family: 'Dela Gothic One', sans-serif;
-    color: var(--corSeptiaria);
-}
-
-.logo{
-    height: 6vh;
-    width: 6vh;
-}
-
-.hamburguer-round{
-    width: 6vh;
-    height: 6vh;
-}
-
-.pagenamebar{
+    justify-content: center;
+    align-items: center;
     background-color: var(--corSeptiaria);
-    border-bottom-left-radius: 3vh;
-    border-bottom-right-radius: 3vh;
-    box-shadow: 0vh 1vh 2vh var(--corSextiaria);
 }
 
-h3{
-    font-family: 'Dela Gothic One', sans-serif;
-    color: var(--corQuintenraia)!important;
-}
-
-main{
-    margin-bottom: 3vh;
-    padding: 2vh;
+.main-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
-/* main img{
-    max-width: 35vh;
-    max-height: 35vh;
-    margin: 5vh;
-    position: relative;
-    right: 1vh; 
-} */
-
-main a{
-    text-decoration: none;
-    color: var(--corQuintenraia);
-}
-
-main .inputs{
-    align-items: center;
-    padding: 5vh;
-    position: relative;
-    left: 20%;
-}
-
-main input{
-    margin: 1.5vh;
-    border-radius: 1vh;
-    border: solid 1.5px black;
-    box-shadow: 7px 7px 5px black;
-    padding: 1vh;
-    max-width: 80vh;
-    min-width: 20vh;
-}
-
-main .inputs input::placeholder{
-    color: black;
-}
-
-/* main button{
-    background-color: var(--corPrincipal);
-    font-size: x-large;
-    box-shadow: 7px 7px 5px black;
-    padding: 1vh;
-    max-width: 30vh;
-    min-width: 20vh;
-} */
-
-/* main a{
-    position: relative;
-    left: 5vh;
-    font-size: large;
-} */
-
-main p{
-    max-width: 60%;
-}
-
-main .card{
-    min-width: 35vh;
-    min-height: 20vh;
-    max-width: 40vh;
-    max-height: 35vh;
-    border: solid var(--corTerciaria) 1px;
-    margin: 1.5vh;
-    margin-bottom: 3.5vh;
-    border-radius: 5vh;
+.Pesquisa {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid var(--corTerciaria);
+    border-radius: 5px;
     box-shadow: 7px 7px 5px var(--corSecundaria);
-    padding: 2vh;
-}
-
-.Pesquisa{
-    width: 90vh;
-    position: relative;
-    left: 54vh;
-    background-size: 30px 30px;
-    background-position: 10px 5px;
+    background-size: 20px;
+    background-position: 10px center;
     background-repeat: no-repeat;
-    background-image: url("Design/Design\ Alpha\ 1.9/Imagens/Lupa.png");
-    margin-bottom: 5vh;
-    box-shadow: 7px 7px 5px var(--corSecundaria);
+    background-image: url('Design/Design Alpha 1.9/Imagens/Lupa.png');
+    padding-left: 40px; /* Adjusted to avoid overlapping text with the background image */
 }
 
-.Pesquisa::placeholder{
-    font-size: 25px;
-    position: absolute;
-    left: 30%;
-    top: 0.5vh;
+.Pesquisa::placeholder {
+    font-size: 100%;
 }
 
-.card h5{
-    width: max-content;
-    max-height: 2vh;
-    max-width: 20vh;
-    color: var(--corQuartiaria);
-    position: relative;
-    left: 30%;
-}
-
-.card img{
-    width: max-content;
-    max-width: 10rem;
-    max-height: 10rem;
-    height: fit-content;
-    border-radius: 15px;
-}
-
-#card_1{
-    /*border: solid green;*/
-    position: relative;
-    left: 2vh;
-}
-
-#cards_2{
-    /*border: solid blue;*/
-    margin-bottom: 1.5vh;
-    position: relative;
-}
-
-#Animais{
-    margin-bottom: 5vh;
-}
-
-#Brinquedos{
-    position: relative;
-    bottom: 1.5vh;
-}
-
-#Brinquedos img{
-    max-width: 9rem;
-    max-height: 9rem;
-}
-
-#Brinquedos h5{
-    margin-left: -15px;
-}
-
-/*#Alfabeto{
-}*/
-
-/*#Esportes{
-    
-}*/
-
-#Alimentos h5{
-    left: 25%;
-}
-
-#Calendário h5{
-    left: 20%;
-}
-
-#Ciências{
-    top: 2vh;
-}
-
-#Cores{
-    top: 2vh;
-}
-
-#Nascimento{
-    width: 36.5vh;
-}
-
-/* Página exemplo */
-#pesquisa{
-    left: 3vh;
-}
-
-#blank{
-    position: relative;
-    bottom: 1vh;
-    left: 52vh;
-    width: max-content;
-    min-width: 91.5vh;
-    min-height: 15vh;
-    max-height: 50vh;
-}
-
-main a img{
-    position: relative;
-    top: 0.5vh;
-    width: auto;
-    height: auto;
-    max-width: 9vh;
-    max-height: 9vh;
-    min-width: 5vh;
-    min-height: 5vh;
-}
-
-#Voltar{
-    margin: 1.5vh;
-    border-radius: 1vh;
-    border: solid 1.5px black;
-    box-shadow: 7px 7px 5px var(--corSecundaria);
-    padding: 1vh;
-
-}
-
-/* -------------- */
-
-footer{
-    background-color: var(--corSeptiaria);
-    height: fit-content;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
-    padding: 3vh;
-    box-shadow: 0vh -1vh 2vh var(--corSextiaria);
 }
 
-footer img{
-    height: 6vh;
-    width: 6vh;
+.card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 200px; /* Adjusted the max-width to make cards smaller */
 }
 
-.logo-login{
-    height: 20vh;
-    width: 20vh;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--corTerciaria);
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px var(--corSecundaria);
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
-.logo-login-title{
-    font-family: 'Dela Gothic One', sans-serif;
+.card:hover {
+    transform: scale(1.05);
 }
 
-.btn-login{
-    background: rgb(255,153,0);
-    background: linear-gradient(90deg, rgba(255,153,0,1) 0%, rgba(255,194,0,1) 100%);
-    border: none; 
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-title-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--corSeptiaria);
+    width: 100%;
+}
+
+.card-title {
+    font-family: var(--fontePrimaria);
+    color: var(--corQuartiaria);
 }

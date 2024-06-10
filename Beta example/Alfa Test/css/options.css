@@ -1,0 +1,156 @@
+.options {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+}
+.container-options {
+	width: 842px;
+	margin-top: -100px;
+}
+
+.cards-options {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.card-option {
+	width: 48%;
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+
+	position: relative;
+	border-radius: 15px;
+	padding-left: 15px;
+	cursor: pointer;
+	background-color: var(--red-default);
+}
+
+.card-option:not(.card-option:hover) {
+	opacity: 0.9;
+}
+
+.card-option:last-child {
+	background-color: var(--green-market);
+}
+
+.card-option h2 {
+	font-size: 2.25rem;
+	color: var(--white);
+}
+
+.card-option img {
+	resize: auto;
+	object-fit: contain;
+	width: 250px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.card-option button {
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	font-family: "SulSans Bold", sans-serif;
+	height: 36px;
+	padding: 0 12px;
+	width: 146px;
+	font-size: 1rem;
+	color: var(--white);
+	background-color: var(--dark-red);
+}
+
+.card-option:last-child button {
+	background-color: var(--dark-green);
+}
+
+@media screen and (max-width: 900px) {
+	.container-options {
+		width: 100%;
+	}
+
+	.cards-options {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.card-option {
+		width: 95%;
+		margin-top: 20px;
+	}
+	.card-option img {
+		width: 200px;
+	}
+}
+
+.mini-cards-options {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 100px;
+}
+
+.mini-card {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.mini-card figure {
+	background-color: var(--yellow);
+	height: 47px;
+	border-radius: 5px;
+	width: 188px;
+	position: relative;
+	bottom: 0;
+}
+
+.mini-card:nth-child(2) figure {
+	background-color: var(--pink);
+}
+
+.mini-card:nth-child(4) figure {
+	background-color: var(--purple);
+}
+
+.mini-card img {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	transform: translateX(50%);
+	width: 65%;
+	transition: width 2s;
+}
+
+.mini-card:hover img {
+	width: 80%;
+}
+
+.mini-card span {
+	margin-top: 10px;
+}
+
+.mini-card span::after {
+	content: ">";
+	color: var(--red-default);
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+	.mini-cards-options {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.mini-card {
+		margin-top: 100px;
+	}
+}

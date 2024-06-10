@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "SulSans";
+	src: url(./SulSans-Regular.otf);
+}
+
+@font-face {
+	font-family: "SulSans Medium";
+	src: url(./SulSans-Medium.otf);
+}
+
+@font-face {
+	font-family: "SulSans Black";
+	src: url(./SulSans-Black.otf);
+}
+
+@font-face {
+	font-family: "SulSans Bold";
+	src: url(./SulSans-Bold.otf);
+}
+
+@font-face {
+	font-family: "SulSans Light";
+	src: url(./SulSans-Light.otf);
+}
