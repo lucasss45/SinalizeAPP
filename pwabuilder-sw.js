@@ -1,22 +1,22 @@
 
-// let i = 1;
 let bah = document.getElementById("bah");
- 
+let vixe = document.getElementById("vixe"); 
+
 function funcTeste() {
   console.log("Tá puxando a função");
-  bah.setAttribute('onclick', 'funcTeste2()');
+  vixe.setAttribute('onclick', 'funcTeste2()');
   bah.setAttribute('src', 'Design/Design Alpha 1.9/Imagens/Vel-rápido.jpg');
 }
 
 function funcTeste2() {
   console.log("Tá puxando a função 2");
-  bah.setAttribute('onclick', 'funcTeste3()');
+  vixe.setAttribute('onclick', 'funcTeste3()');
   bah.setAttribute('src', 'Design/Design Alpha 1.9/Imagens/Vel-devagar.jpg');
 }
 
 function funcTeste3() {
   console.log("Tá puxando a função 3");
-  bah.setAttribute('onclick', 'funcTeste()');
+  vixe.setAttribute('onclick', 'funcTeste()');
   bah.setAttribute('src', 'Design/Design Alpha 1.9/Imagens/Velocidade.jpg');
 }
 
