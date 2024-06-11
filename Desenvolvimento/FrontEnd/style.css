@@ -122,12 +122,6 @@ header {
     transition: 0.3s;
 }
 
-.ProfileButton{
-    float: right;
-    width: 5vh;
-    height: 5vh;
-}
-
 /* Estilos Aside */
 aside{
     float: left;
@@ -321,7 +315,6 @@ main p {
 
 /* Estilos do footer */
 footer {
-    background-color: var(--corSeptiaria);
     height: fit-content;
     width: 100%;
     padding: 3vh;
@@ -340,12 +333,6 @@ footer img {
 
 .logo-login-title {
     font-family: 'Dela Gothic One', sans-serif;
-}
-
-.btn-login {
-    background: var(--corPrincipal);
-    background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
-    border: none; 
 }
 
 .campoLogin {
@@ -403,51 +390,13 @@ footer img {
     background: var(--corSecundaria);
 }
 
+
 .campoLogin {
     border: solid var(--corSextiaria) 0.2vh;
     border-radius: 10vh;
     padding: 1.5vh;
     height: 6vh;
     margin-bottom: 1vh;
-}
-
-.dropdown .btn-secondary {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.dropdown .btn-secondary img {
-    width: 7vh;
-    height: 7vh;
-}
-
-.dropdown-menu {
-    background-color: var(--corPrincipal) !important; 
-    width: 40vh; 
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    position: absolute;
-}
-
-.dropdown-item {
-    background-color: var(--corPrincipal) !important;  
-    color: var(--corSeptiaria) !important;
-    font-family: var(--fontePrimaria);
-    padding: 9vh; 
-    border-bottom: 0.1vh solid var(--corSecundaria);
-}
-
-.dropdown-item:hover {
-    background-color: var(--corPrincipal) !important;
-    color: var(--corSeptiaria) !important;
-    transform: translateY(-0.3vh); 
-    box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
 }
 
 .comentarios-section {

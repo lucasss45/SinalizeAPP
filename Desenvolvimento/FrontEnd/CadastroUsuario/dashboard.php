@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id'])) {
             <img class="placeholder" src="../Imagens/AulasImg.png" alt="Aulas">
         </a>
         <a href="../Tradutor.php">
-            <img class="placeholder" src="../Imagens/TradutorImg.png" alt="Tradutor">
+            <img class="placeholder" src="../Imagens/Tradutor.png" alt="Tradutor">
         </a>
         <a href="../Dicionario.php">
             <img class="placeholder" src="../Imagens/DicionarioImg.png" alt="Dicionário">

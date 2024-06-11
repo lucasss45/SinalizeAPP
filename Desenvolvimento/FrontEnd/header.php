@@ -34,24 +34,38 @@
             <input class="SearchBar" type="text" placeholder="Pesquisar aulas">
         </div>
         <div class="col">
-            <img class="ProfileButton" src="Imagens/ExPictureHere.png" alt="Botão de perfil do usuário">
+            <a href="CadastroUsuario/Login.php">
+                <img class="ProfileButton" src="Imagens/ExPictureHere.png" alt="Botão de perfil do usuário">
+            </a>
+            <a href = "CadastroUsuario/Cadastro.php">
+                <img class="ProfileButton" src="Imagens/ExPictureHere.png" alt="Botão de perfil do usuário">
+            </a>
         </div>
     </header>
     <aside class="p-3">
         <div class="row mb-3">
-            <a>
+            <a href="Aulas.php">
                 <img src="Imagens/AulasImg.png" alt="Botão da página das aulas">           
             </a>
         </div>
         <div class="row mb-3">
-            <a>
+            <a href="Dicionario.php">
                 <img src="Imagens/DicionarioImg.png" alt="Botão da página de dicionário">
             </a>
         </div>
         <div class="row">
-            <a>
+            <a href="Tradutor.php">
                 <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
             </a>
         </div>
-        
+        <div class="row">
+            <a href="Comunidade.php">
+                <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
+            </a>
+        </div>
+        <div class="row">
+            <a href="Pesquisa.php">
+                <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
+            </a>
+        </div>
 </aside>
