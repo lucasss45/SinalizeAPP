@@ -37,9 +37,6 @@
             <a href="CadastroUsuario/Login.php">
                 <img class="ProfileButton" src="Imagens/ExPictureHere.png" alt="Botão de perfil do usuário">
             </a>
-            <a href = "CadastroUsuario/Cadastro.php">
-                <img class="ProfileButton" src="Imagens/ExPictureHere.png" alt="Botão de perfil do usuário">
-            </a>
         </div>
     </header>
     <aside class="p-3">
@@ -60,12 +57,12 @@
         </div>
         <div class="row">
             <a href="Comunidade.php">
-                <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
+                <img src="Imagens/Comunittyicon.png" alt="Botão da função de tradutor">
             </a>
         </div>
         <div class="row">
             <a href="Pesquisa.php">
-                <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
+                <img class="searchicon" src="Imagens/PesquisaIcone.png" alt="Botão da função de tradutor">
             </a>
         </div>
 </aside>

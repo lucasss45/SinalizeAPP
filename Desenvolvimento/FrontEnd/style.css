@@ -516,3 +516,13 @@ footer img {
     cursor: pointer;
 }
 
+.ProfileButton{
+    height: 5vh;
+    width: 5vh;
+    float: right;
+}
+
+.searchicon{
+    margin-top: 1vh;
+    width: 6.5vh;
+}
