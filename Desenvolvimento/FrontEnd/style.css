@@ -342,12 +342,6 @@ footer img {
     height: 6vh;
 }
 
-.btnSend {
-    color: var(--corTerciaria);
-    font-weight: 700;
-    border-radius: 10vh;
-    padding: 1.5vh;
-}
 
 .card-img-top {
     width: 2vh;
@@ -390,6 +384,39 @@ footer img {
     background: var(--corSecundaria);
 }
 
+.btn-header {
+    background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
+    border: none;
+    color: var(--corTerciaria);
+    font-weight: 500;
+    border-radius: 10vh;
+    padding: 2vh 3vh; 
+    cursor: pointer;
+    margin-right: 3vh;
+    justify-content: space-between;
+}
+
+.contato {
+    color: var(--corTerciaria);
+    text-align: center; /* Texto centralizado */
+    font-family: var(--fonteSecundaria)
+}
+
+.contato h3{
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    line-height: 1.5; 
+}
+
+.contato a {
+    display: inline-block;
+    padding: 1vh 3vh;
+    text-decoration: none; 
+    font-size: 3.5vh; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    margin-bottom: 5vh;
+}
 
 .campoLogin {
     border: solid var(--corSextiaria) 0.2vh;
@@ -410,7 +437,7 @@ footer img {
 
 .comentarios-section .comentario {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 4vh;
 }
 
 .comentarios-section .comentario .info span {
@@ -419,11 +446,11 @@ footer img {
 
 .comentarios-section .comentario p {
     font-family: var(--fonteSecundaria);
-    margin-top: 5px;
+    margin-top: 1vh;
 }
 
 .comentario-form {
-    margin-bottom: 20px;
+    margin-bottom: 4vh;
 }
 
 .comentario-form form {
@@ -432,9 +459,9 @@ footer img {
 
 .comentario-form form textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    padding: 2vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 1vh;
     resize: vertical;
 }
 
@@ -442,22 +469,13 @@ footer img {
     background-color: var(--corPrincipal);
     color: var(--corTerciaria);
     font-family: var(--fontePrimaria);
-    font-size: larger;
+    font-size: 3vh;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 10vh;
+    padding: 2vh 4vh;
     cursor: pointer;
 }
 
-.comentario-form form input[type="submit"]:hover {
-    background-color: var(--corSecundaria);
-}
-
-.email-section {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-}
 
 .input-group {
     gap: 10vh;
@@ -526,3 +544,69 @@ footer img {
     margin-top: 1vh;
     width: 6.5vh;
 }
+
+.footer {
+    background-color: #101010;
+    color: #ffffff;
+    padding: 5vh 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer_left {
+    flex: 1;
+    text-align: left;
+    padding: 0 2rem;
+  }
+  
+  .footer_right {
+    text-align: right;
+  }
+  
+  .c-nav-tool_title {
+    font-size: 4vh;
+    color: #ffc200;
+    margin-bottom: 2vh;
+    font-family: var(--fontePrimaria)
+  }
+  
+  .c-nav-tool_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .c-link {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+    font-size: 3vh;
+    cursor: pointer;
+  }
+  
+  .footer_text {
+    font-size: 4.5vh;
+    font-style: italic; /* adicionei essa linha para manter o estilo itálico no hover */
+    line-height: 1.5;
+    color: var(--corSeptiaria); 
+    text-align: left;
+  }
+  
+  .footer_text:hover {
+    color: var(--corPrincipal)!important;
+    font-size: 5vh; 
+  }
+  

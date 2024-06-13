@@ -11,7 +11,7 @@ $dbName = 'Sinalize';
 $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
 if ($conexao->connect_errno) {
-    echo "Erro na conexão: ". $conexao->connect_error;
+    echo "Erro na conexão: " . $conexao->connect_error;
     exit();
 }
 
@@ -29,7 +29,7 @@ if (!$conexao->query($sql)) {
     ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci";
 
     if (!$conexao->query($sql)) {
-        echo "Erro ao criar tabela de comentários: ". $conexao->error;
+        echo "Erro ao criar tabela de comentários: " . $conexao->error;
         exit();
     }
 } else {
@@ -38,7 +38,7 @@ if (!$conexao->query($sql)) {
     if ($result->num_rows == 0) {
         $sql = "ALTER TABLE comentarios ADD COLUMN Curtidas int DEFAULT 0";
         if (!$conexao->query($sql)) {
-            echo "Erro ao adicionar coluna Curtidas: ". $conexao->error;
+            echo "Erro ao adicionar coluna Curtidas: " . $conexao->error;
             exit();
         }
     }
@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO comentarios (Usuario_ID, Comentario, Topico) VALUES (?,?,?)";
     $stmt = $conexao->prepare($sql);
     if (!$stmt) {
-        echo "Erro ao preparar consulta: ". $conexao->error;
+        echo "Erro ao preparar consulta: " . $conexao->error;
         exit();
     }
     $stmt->bind_param("iss", $usuario_id, $comentario, $topico);
@@ -64,7 +64,7 @@ $sql = "SELECT c.ID, c.Usuario_ID, c.Comentario, c.Submit_Date, c.Curtidas, c.To
         ORDER BY c.Submit_Date DESC";
 $result = $conexao->query($sql);
 if (!$result) {
-    echo "Erro ao buscar comentários: ". $conexao->error;
+    echo "Erro ao buscar comentários: " . $conexao->error;
     exit();
 }
 

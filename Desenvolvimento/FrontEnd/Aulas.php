@@ -18,7 +18,7 @@
         <div class="row">
             <div>
                 <h3 class="m-2">
-                    Unidade 1: Introdução
+                    Unidade 2: Construindo seu Vocabulário
                 </h3>
             </div>
             <div>
@@ -30,7 +30,7 @@
         <div class="row">
             <div>
                 <h3 class="m-2">
-                    Unidade 1: Introdução
+                    Unidade 3: Em Construção...
                 </h3>
             </div>
             <div>

@@ -33,9 +33,12 @@
         <div class="col col-lg-6">
             <input class="SearchBar" type="text" placeholder="Pesquisar aulas">
         </div>
-        <div class="col">
-            <a href="CadastroUsuario/Login.php">
-                <img class="ProfileButton" src="Imagens/ExPictureHere.png" alt="Botão de perfil do usuário">
+        <div class="col-lg-3 d-flex justify-content-end align-items-center">
+            <a href="CadastroUsuario/Login.php" class="btn-link">
+                <input type="button" class="btn-header" value="Login" onclick="msg()">
+            </a>
+            <a href="CadastroUsuario/Cadastro.php" class="btn-link">
+                <input type="button" class="btn-header" value="Cadastro" onclick="msg()">
             </a>
         </div>
     </header>
@@ -50,17 +53,17 @@
                 <img src="Imagens/DicionarioImg.png" alt="Botão da página de dicionário">
             </a>
         </div>
-        <div class="row">
+        <div class="row mb-3">
             <a href="Tradutor.php">
                 <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
             </a>
         </div>
-        <div class="row">
+        <div class="row mb-3">
             <a href="Comunidade.php">
                 <img src="Imagens/Comunittyicon.png" alt="Botão da função de tradutor">
             </a>
         </div>
-        <div class="row">
+        <div class="row mb-3">
             <a href="Pesquisa.php">
                 <img class="searchicon" src="Imagens/PesquisaIcone.png" alt="Botão da função de tradutor">
             </a>
