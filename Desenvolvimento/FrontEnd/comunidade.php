@@ -4,17 +4,12 @@ include 'header.php';
 ?>
 
 <div class="container">
-    <div class="email-section">
-        <section class="comunicado">
-            <div class="comunicado-principal">
-                <h3>Fale conosco!</h3><br>
-                <a href="mailto:sinalize.projeto.senacrs@gmail.com?subject=Comentários sobre aplicativo">Encaminhar e-mail</a>
-            </div>
+    <section class="comunicado">
+        <h3>Fale conosco!</h3>
             <p>Esperamos que sua experiência com nosso aplicativo tenha sido agradável</p>
+            <a href="mailto:sinalize.projeto.senacrs@gmail.com?subject=Comentários sobre aplicativo">Encaminhar e-mail</a>
         </section>
-    </div>
 
-    <div class="texto-section">
     <?php if (isset($_SESSION['user_id'])) {?>
         <div class="comentario-form">
             <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
@@ -28,10 +23,10 @@ include 'header.php';
                         <option value="Sugestões">Sugestões</option>
                         <option value="Dúvidas">Dúvidas</option>
                     </select>
-                    <input type="submit" name="submit" value="Enviar">
+                <input type="submit" name="submit" value="Enviar">
                 </div>
             </form>
-        </div>
+            
     <?php } else {?>
         <p>Você precisa estar logado para comentar.</p>
     <?php }?>
@@ -73,4 +68,5 @@ $(document).ready(function(){
 });
 
 </script>
+
 

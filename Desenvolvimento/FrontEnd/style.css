@@ -8,7 +8,7 @@
     --corSextiaria: #ababab;
     --corSeptiaria: #ffffff;
     --fontePrimaria: 'Dela Gothic One', sans-serif;
-    --fonteSecundaria: Arial, Helvetica, sans-serif; 
+    --fonteSecundaria: 'Roboto', sans-serif;
 }
 
 /* Fonte Dela Gothic One */
@@ -18,7 +18,81 @@
     font-style: normal;
 }
 
-/* Reset CSS */
+/* Fonte Roboto */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+  /* Reset CSS */
 * {
     font-family: var(--fonteSecundaria);
     margin: 0;
@@ -27,31 +101,46 @@
 }
 
 /* Estilos do header */
+
 header {
-    display: flex;
-    background-color: var(--corPrincipal);
     height: fit-content; 
 }
 
-header h1 {
-    font-family: 'Dela Gothic One', sans-serif;
-    color: var(--corSeptiaria);
+.HamburguerMenu{
+    width: 5vh;
+    height: 5vh;
 }
 
-.logo {
-    margin: 0.8vh; 
-    height: 6vh;
-    width: 6vh;
+.SearchBar{
+    padding: 2vh;
+    width: 100%;
+    height: 5vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--corQuartiaria);
+    border-radius: 4vh;
+    transition: 0.3s;
 }
 
-.hamburguer-round {
-    margin: 0.8vh; 
-    width: 6vh;
-    height: 6vh;
+/* Estilos Aside */
+aside{
+    float: left;
+    height: 100%;
 }
 
+aside img{
+    width: 5vh;
+    height: 5vh;
+}
+
+.TradImg{
+    width: 7vh;
+    height: 7vh;
+}
+
+/* Main */
 h3 {
-    font-family: 'Dela Gothic One', sans-serif;
+    font-family: var(--fonteSecundaria);
     color: var(--corQuintenraia) !important;
 }
 
@@ -226,7 +315,6 @@ main p {
 
 /* Estilos do footer */
 footer {
-    background-color: var(--corSeptiaria);
     height: fit-content;
     width: 100%;
     padding: 3vh;
@@ -245,12 +333,6 @@ footer img {
 
 .logo-login-title {
     font-family: 'Dela Gothic One', sans-serif;
-}
-
-.btn-login {
-    background: var(--corPrincipal);
-    background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
-    border: none; 
 }
 
 .campoLogin {
@@ -308,6 +390,7 @@ footer img {
     background: var(--corSecundaria);
 }
 
+
 .campoLogin {
     border: solid var(--corSextiaria) 0.2vh;
     border-radius: 10vh;
@@ -316,79 +399,18 @@ footer img {
     margin-bottom: 1vh;
 }
 
-.dropdown .btn-secondary {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.dropdown .btn-secondary img {
-    width: 7vh;
-    height: 7vh;
-}
-
-.dropdown-menu {
-    background-color: var(--corPrincipal) !important; 
-    width: 40vh; 
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    position: absolute;
-}
-
-.dropdown-item {
-    background-color: var(--corPrincipal) !important;  
-    color: var(--corSeptiaria) !important;
-    font-family: var(--fontePrimaria);
-    padding: 9vh;
-    border-bottom: 0.1vh solid var(--corSecundaria);
-}
-
-.dropdown-item:hover {
-    background-color: var(--corPrincipal) !important;
-    color: var(--corSeptiaria) !important;
-    transform: translateY(-0.3vh);
-    box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.1);
-}
-
-
-.textarea-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.textarea-container textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    resize: vertical;
-    justify-content: center;
-    display: flex;
-}
-
 .comentarios-section {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-top: 1px solid #ccc;
+    padding: 2vh;
 }
 
 .comentarios-section h4 {
-    font-family: var(--fontePrimaria) !important;
+    font-family: var(--fontePrimaria);
     color: var(--corQuintenraia) !important;
 }
 
 .comentarios-section .comentario {
     text-align: left;
     margin-bottom: 20px;
-}
-
-.comentarios-section .comentario .info {
-    font-size: smaller;
 }
 
 .comentarios-section .comentario .info span {
@@ -398,10 +420,6 @@ footer img {
 .comentarios-section .comentario p {
     font-family: var(--fonteSecundaria);
     margin-top: 5px;
-}
-
-.comentarios-section .comentario .comment-text {
-    font-size: larger;
 }
 
 .comentario-form {
@@ -441,16 +459,21 @@ footer img {
     border-bottom: 1px solid #ccc;
 }
 
-.texto-section {
-    padding: 20px;
-}
-.comunicado h3 {
-    justify-content: center;
+.input-group {
+    gap: 10vh;
     display: flex;
-    font-family: var(--fontePrimaria);
+    justify-content: center;
 }
 
-.comunicado a {
+@media screen and (max-width: 768px) {
+    .input-group {
+        gap: 5vh; 
+    }
+}
+
+.comunicado h3,
+.comunicado a,
+.comunicado p {
     justify-content: center;
     display: flex;
     font-family: var(--fontePrimaria);
@@ -459,115 +482,37 @@ footer img {
 .textarea-container {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 2vh;
 }
 
 .textarea-container textarea {
-    width: 80%; /* adjust the value according to your needs */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    width: 80%;
+    padding: 1vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 1vh;
     resize: vertical;
 }
 
-.comentarios-section {
-    background-color: transparent;
-    padding: 20px;
-    border-top: 1px solid #ccc;
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    margin-bottom: 1vh;
 }
 
-.comentarios-section h4 {
-    font-family: var(--fontePrimaria);
-    color: var(--corQuintenraia) !important;
-}
-
-.comentarios-section .comentario {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.comentarios-section .comentario .info {
-    font-size: smaller;
-}
-
-.comentarios-section .comentario .info span {
-    font-family: var(--fontePrimaria);
-}
-
-.comentarios-section .comentario p {
-    font-family: var(--fonteSecundaria);
-    margin-top: 5px;
-}
-
-.comentarios-section .comentario .comment-text {
-    font-size: larger;
-}
-
-.comentario-form {
-    margin-bottom: 20px;
-}
-
-.comentario-form form {
-    text-align: center;
-}
-
-.comentario-form form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    resize: vertical;
-}
-
-.comentario-form form input[type="submit"] {
-    background-color: var(--corPrincipal);
-    color: var(--corTerciaria);
+.select-container label {
     font-family: var(--fontePrimaria);
     font-size: larger;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
 }
 
 .comentario-form form select {
-        background-color: var(--corPrincipal);
-        color: var(--corTerciaria);
-        font-family: var(--fontePrimaria);
-        font-size: larger;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-
-    .select-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
-
-    .select-container label {
-        font-family: var(--fontePrimaria);
-        font-size: larger;
-    }
-
-.comentario-form form input[type="submit"]:hover {
-    background-color: var(--corSecundaria);
+    background-color: var(--corPrincipal);
+    color: var(--corTerciaria);
+    font-family: var(--fontePrimaria);
+    font-size: larger;
+    border: none;
+    border-radius: 0.5vh;
+    padding: 1vh 2vh;
+    cursor: pointer;
 }
 
-.email-section {
-    background-color: transparent;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-}
-
-.input-group{
-    
-    display: flex;
-    gap: 5%;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center; /* centraliza verticalmente */
-    margin: 0 auto; /* adiciona um margin automático para centralizar */
-}
