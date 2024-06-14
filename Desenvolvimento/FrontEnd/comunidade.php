@@ -6,7 +6,7 @@ include 'header.php';
 <div class="container">
     <section class="comunicado">
         <h3>Fale conosco!</h3>
-        <p>Esperamos que sua experiência com nosso aplicativo tenha sido agradável.</p>
+        <p>Participe da nossa comunidade e compartilhe suas experiências e sugestões para melhorar o Sinalize.</p>
     </section>
 
     <?php if (isset($_SESSION['user_id'])) { ?>
@@ -63,8 +63,12 @@ $(document).ready(function(){
                 } else {
                     console.error("Erro ao receber número de curtidas: " + response);
                 }
+            },
+            error: function(xhr, status, error) {
+                console.error("Erro na requisição AJAX: " + error);
             }
         });
     });
 });
+
 </script>
