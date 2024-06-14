@@ -10,9 +10,9 @@
                 </h3>
             </div>
             <div>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
         <div class="row">
@@ -22,9 +22,9 @@
                 </h3>
             </div>
             <div>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
         <div class="row">
@@ -34,9 +34,9 @@
                 </h3>
             </div>
             <div>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe class="normalPlayer m-2" src="https://www.youtube.com/embed/u6PV-yNidbY" title="Building a Primitive House With the most Beautiful Around Bamboo Swimming Pool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hIe7FcyIa5A?si=7vkeA7CQ4CogJGFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </main>
