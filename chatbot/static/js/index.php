@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatPlus</title>
-    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header class="cabecalho container">
-        <img src="./img/logo-chatbot.svg" alt="Logo Chatbot">
+        <img src="img/logo-chatbot.svg" alt="Logo Chatbot">
         <div class="cabecalho__acoes">
             <a href="#" onclick="limparConversa()">Limpar Conversa</a>
         </div>
@@ -24,7 +24,7 @@
         <section class="entrada container">
             <div class="entrada__container">
                 <input type="text" class="entrada__input" placeholder="Enviar uma mensagem" id="input">
-                <button aria-label="Botão de enviar" id="botao-enviar"><img src="./img/enviar.png" alt="" style="height: 28px;"></button>
+                <button aria-label="Botão de enviar" id="botao-enviar"><img src="img/enviar.png" alt="" style="height: 28px;"></button>
             </div>
         </section>
     </main>

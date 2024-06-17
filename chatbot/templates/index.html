@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatPlus</title>
-    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
     <header class="cabecalho container">
-        <img src="./img/logo-chatbot.svg" alt="Logo Chatbot">
+        <img src="../static/img/logo-chatbot.svg" alt="Logo Chatbot">
         <div class="cabecalho__acoes">
             <a href="#" onclick="limparConversa()">Limpar Conversa</a>
         </div>
@@ -24,10 +24,16 @@
         <section class="entrada container">
             <div class="entrada__container">
                 <input type="text" class="entrada__input" placeholder="Enviar uma mensagem" id="input">
-                <button aria-label="Botão de enviar" id="botao-enviar"><img src="./img/enviar.png" alt="" style="height: 28px;"></button>
+                <button aria-label="Botão de enviar" id="botao-enviar" onclick="enviarMensagemUsuario()"><img src="../static/img/enviar.png" alt="" style="height: 28px;"></button>
+                <!-- <button class="botao-pergunta" onclick="enviarPerguntaAutomatica('Qual é a sua pergunta?')">Pergunta Automática</button> -->
             </div>
         </section>
     </main>
-    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/chatbot.js"></script>
+    <script>
+        // Adicione JavaScript 
+    </script>
 </body>
 </html>
