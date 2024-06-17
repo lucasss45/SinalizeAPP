@@ -54,6 +54,11 @@
             </a>
         </div>
         <div class="row mb-3">
+            <a href="chatbot.php">
+                <img class="TradImg" src="Imagens/ChatBotIcon.png" alt="Botão da função de tradutor">
+            </a>
+        </div>
+        <div class="row mb-3">
             <a href="Tradutor.php">
                 <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
             </a>

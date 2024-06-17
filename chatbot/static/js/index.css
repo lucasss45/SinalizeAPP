@@ -6,12 +6,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    background: (to bottom, #01080E);
+    background: linear-gradient(to bottom, #01080E, #144480);
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
-}
-a:visited {
-    color: #ff9900;
 }
 
 .container {
@@ -74,7 +71,7 @@ a:visited {
 .chat__bolha {
     max-width: calc(100% - 3.5rem);
     width: fit-content;
-    padding: 0.8rem;
+    padding: 1.5rem;
     border-radius: 10px;
     font-size: 1.375rem;
     margin: 1.5rem 0;
@@ -88,9 +85,8 @@ a:visited {
 }
 
 .chat__bolha--bot {
-    background-color: #ffc200;
+    background-color: #5385C3;
 }
-
 
 .chat__bolha--bot::after {
     content: "";
@@ -102,15 +98,15 @@ a:visited {
     position: absolute;
     top: 0;
     right: calc(-2.5rem - 1rem);
+
     background-image: url(../img/icone-chatbot.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .chat__bolha--usuario {
-    border: 1px solid black;
+    border: 1px solid #5385C3;
     align-self: flex-end;
-    background-color: #ffc200;
 }
 
 .chat__bolha--usuario::before {
@@ -130,13 +126,13 @@ a:visited {
 }
 
 .entrada {
-    height: 8rem;
+    height: 10rem;
     position: relative;
     display: flex;
     gap: 1.5rem;
     justify-content: stretch;
     align-items: center;
-    border-top: 1px solid rgb(165, 164, 164);
+    border-top: 1px solid #1C5296;
 }
 
 .entrada__container {
@@ -144,24 +140,27 @@ a:visited {
     gap: 0.8rem;
     justify-content: space-between;
     width: 100%;
+
     padding: 0 0.5rem;
-    background-color: #ffea00cd;
+
+    background-color: #1C5296;
+    border: 1px solid #0C305C;
     border-radius: 4rem;
 }
 
 .entrada__input {
     height: 3.5rem;
     width: 100%;
+
     background-color: transparent;
     font-size: 1.375rem;
-    color: white;
+    color: #CED3E0;
+
     padding-left: 20px;
 }
 
-
 .entrada__input::placeholder {
-    color: white;
-
+    color: #CED3E0;
 }
 
 .entrada__enviar-audio {
@@ -202,7 +201,7 @@ a:visited {
     justify-content: space-between;
     width: 50%;
     padding: 0 2.5rem;
-    background-color: #4d961c;
+    background-color: #1C5296;
     border: 1px solid #0C305C;
     border-radius: 4rem;
 }
@@ -210,14 +209,14 @@ a:visited {
 .login__input {
     height: 4rem;
     width: 50%;
+
     background-color: transparent;
     font-size: 1.375rem;
-    color: white;
+    color: #CED3E0;
 }
 
-
 .login__input::placeholder {
-    color: white;
+    color: #CED3E0;
 }
 
 @media screen and (min-width: 1400px) {
