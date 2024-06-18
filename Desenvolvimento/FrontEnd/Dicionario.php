@@ -2,15 +2,46 @@
     include 'header.php';
 ?>
 
-    <main class="d-flex justify-content-center">
-        <div class="d-flex flex-column align-self-center p-2">
-            <div class="card" style="width: 18rem;">
-                <img src="https://th.bing.com/th/id/OIP.anBUETngw0uLCa5exgQSqQHaHa?rs=1&pid=ImgDetMain" class="card-img-top align-self-center" alt="...">
-                <div class="card-body justify-content-center">
-                  <h5 class="card-title align-self-center">Animais</h5>
-                  <a href="#" class="btn btn-primary a  lign-self-center">Go somewhere</a>
-                </div>
-              </div>
+    <main>
+        <div class="dropdown row w-75 mx-auto m-3">
+            <button class="btn btn-secondary dropdown-toggle-split" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tema 1 - Lorem Ipsum
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Palavra 1</a></li>
+                <li><a class="dropdown-item" href="#">Palavra 2</a></li>
+                <li><a class="dropdown-item" href="#">Palavra 3</a></li>
+            </ul>
+        </div>
+        <div class="dropdown row w-75 mx-auto m-3">
+            <button class="btn btn-secondary dropdown-toggle-split" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tema 2 - Lorem Ipsum
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Palavra 1</a></li>
+                <li><a class="dropdown-item" href="#">Palavra 2</a></li>
+                <li><a class="dropdown-item" href="#">Palavra 3</a></li>
+            </ul>   
+        </div>
+        <div class="dropdown row w-75 mx-auto m-3">
+            <button class="btn btn-secondary dropdown-toggle-split" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tema 3 - Lorem Ipsum
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Palavra 1</a></li>
+                <li><a class="dropdown-item" href="#">Palavra 2</a></li>
+                <li><a class="dropdown-item" href="#">Palavra 3</a></li>
+            </ul>
+        </div>
+        <div class="dropdown row w-75 mx-auto m-3">
+            <button class="btn btn-secondary dropdown-toggle-split" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tema 4 - Lorem Ipsum
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Palavra 1 </a></li>
+                <li><a class="dropdown-item" href="#">Palavra 2</a></li>
+                <li><a class="dropdown-item" href="#">Palavra 3</a></li>
+            </ul>   
         </div>
     </main>
     
