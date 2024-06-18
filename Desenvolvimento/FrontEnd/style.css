@@ -162,6 +162,7 @@ p {
 
 main {
     margin-bottom: 3vh;
+    height: 100%;
     padding: 2vh;
     align-items: center;
 }
@@ -607,10 +608,10 @@ footer img {
     line-height: 1.5;
     color: var(--corSeptiaria); 
     text-align: left;
+    transition: 0.3s;
   }
   
   .footer_text:hover {
     color: var(--corPrincipal)!important;
     font-size: 5vh; 
   }
-  
