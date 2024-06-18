@@ -2,6 +2,7 @@ import nltk
 import numpy as np
 import random
 import json
+import os
 
 import torch
 import torch.nn as nn
@@ -11,8 +12,16 @@ from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 nltk.download('punkt')
 
-with open('intents.json', 'r') as f:
-    intents = json.load(f)
+# Obtenha o caminho absoluto do diretório atual
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Combine o caminho absoluto com o nome do arquivo
+file_path = os.path.join(current_dir, 'intents.json')
+
+# Verifique se o arquivo existe
+if os.path.exists(file_path):
+    with open(file_path, 'r') as f:
+        intents = json.load(f)
+    
 
 
 all_words = []

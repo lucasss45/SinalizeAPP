@@ -1,6 +1,6 @@
 import random
 import json
-
+import os
 import torch
 
 from model import NeuralNet
@@ -8,8 +8,14 @@ from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intents.json', 'r') as json_data:
-    intents = json.load(json_data)
+# Obtenha o caminho absoluto do diretório atual
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Combine o caminho absoluto com o nome do arquivo
+file_path = os.path.join(current_dir, 'intents.json')
+
+if os.path.exists(file_path):
+    with open(file_path, 'r') as f:
+        intents = json.load(f)
 
 FILE = "data.pth"
 data = torch.load(FILE)
