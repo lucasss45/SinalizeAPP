@@ -1,5 +1,8 @@
 ## 🤟 SINALIZE
 
+download 
+https://drive.google.com/file/d/1j_3q-bi-6p6A4k2M49Lbwpv7gVt2Gqgo/view?usp=sharing
+
 Sinalize é um aplicativo inovador desenvolvido para ensinar língua de sinais de forma acessível e eficiente. Com uma interface intuitiva e diversas funcionalidades, Sinalize torna o aprendizado da língua de sinais uma experiência envolvente e educativa.
 
 ## Funcionalidades Principais
@@ -32,3 +35,5 @@ Sinalize é um aplicativo inovador desenvolvido para ensinar língua de sinais d
 ## Projeto 
 
 Este projeto é um trabalho realizado como parte da realização pratica do proposto no nosso artigo cientifico "Libras e Inclussão".
+
+

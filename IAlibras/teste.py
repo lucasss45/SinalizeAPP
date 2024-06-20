@@ -3,6 +3,7 @@ import numpy as np
 import time
 import matplotlib.pyplot as plt
 
+import os
 import extrator_POSICAO as posicao
 import extrator_ALTURA as altura
 import extrator_PROXIMIDADE as proximidade
@@ -10,8 +11,11 @@ import extrator_CORPO as corpo
 import alfabeto
 
 # Configurações
-arquivo_proto = "pose_deploy.prototxt"
-modeloCaffe = "pose_iter_102000.caffemodel"
+#arquivo_proto = "pose_deploy.prototxt"
+arquivo_proto = "C:/Users/LUCASGODOYVIZEU/Documents/GitHub/SinalizeAPP/IAlibras/pose_deploy.prototxt"
+#modeloCaffe = "pose_iter_102000.caffemodel" 
+modeloCaffe = "C:/Users/LUCASGODOYVIZEU/Documents/GitHub/SinalizeAPP/IAlibras/pose_iter_102000.caffemodel"
+
 nPontos = 22
 PARES_POSE = [[0, 1], [1, 2], [2, 3], [3, 4], [0, 5], [5, 6], [6, 7], [7, 8], [0, 9], [9, 10], [10, 11], [11, 12],
               [0, 13], [13, 14], [14, 15], [15, 16], [0, 17], [17, 18], [18, 19], [19, 20]]
