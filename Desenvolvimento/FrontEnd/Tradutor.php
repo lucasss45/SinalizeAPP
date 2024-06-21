@@ -17,7 +17,6 @@
             </button>
         </div>
     </main>
-    
 <?php
     include 'footer.php';
 ?>
