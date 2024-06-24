@@ -1,0 +1,138 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Oi",
+        "Olá",
+        "Como você está?",
+        "Tem alguém aí?",
+        "Bom dia"
+      ],
+      "responses": [
+        "Oi :-)",
+        "Olá, obrigado por visitar",
+        "Oi, como posso ajudar?",
+        "Olá, em que posso ser útil?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["Tchau", "Até mais", "Adeus"],
+      "responses": [
+        "Até mais, obrigado pela visita",
+        "Tenha um bom dia",
+        "Tchau! Volte em breve."
+      ]
+    },
+    {
+      "tag": "agradecimento",
+      "patterns": ["Obrigado", "Muito obrigado", "Isso foi útil", "Valeu!"],
+      "responses": ["Fico feliz em ajudar!", "De nada!", "À disposição"]
+    },
+    {
+      "tag": "libras_introduction",
+      "patterns": [
+        "O que é Libras?",
+        "Pode me falar sobre Libras?",
+        "O que significa Libras?",
+        "O que é a Língua Brasileira de Sinais?"
+      ],
+      "responses": [
+        "Libras é a Língua Brasileira de Sinais, utilizada pela comunidade surda no Brasil para comunicação.",
+        "A Língua Brasileira de Sinais, ou Libras, é um sistema linguístico de natureza visual-motora."
+      ]
+    },
+    {
+      "tag": "libras_alphabet",
+      "patterns": [
+        "Como é o alfabeto em Libras?",
+        "Como faço as letras em Libras?",
+        "Me mostre o alfabeto de Libras",
+        "Qual é o alfabeto em Libras?"
+      ],
+      "responses": [
+        "O alfabeto em Libras consiste em gestos com as mãos representando cada letra do alfabeto.",
+        "Você pode aprender o alfabeto em Libras através de imagens e vídeos que mostram cada sinal."
+      ]
+    },
+    {
+      "tag": "libras_numbers",
+      "patterns": [
+        "Como contar em Libras?",
+        "Como são os números em Libras?",
+        "Me mostre os números em Libras",
+        "Como faço os números em Libras?"
+      ],
+      "responses": [
+        "Os números em Libras são representados por sinais específicos com as mãos.",
+        "Você pode aprender os números em Libras através de vídeos que demonstram cada sinal numérico."
+      ]
+    },
+    {
+      "tag": "libras_greetings",
+      "patterns": [
+        "Como dizer oi em Libras?",
+        "Como saudar em Libras?",
+        "Como dizer bom dia em Libras?",
+        "Como cumprimento alguém em Libras?"
+      ],
+      "responses": [
+        "Para dizer 'oi' em Libras, você pode usar o sinal específico que é um aceno de mão.",
+        "Você pode aprender saudações em Libras através de vídeos que mostram os sinais de cumprimento."
+      ]
+    },
+    {
+      "tag": "libras_questions",
+      "patterns": [
+        "Como fazer perguntas em Libras?",
+        "Como perguntar algo em Libras?",
+        "Como faço perguntas em Libras?",
+        "Me mostre perguntas em Libras"
+      ],
+      "responses": [
+        "Para fazer perguntas em Libras, você pode usar sinais específicos para palavras como 'o que', 'quem', 'onde', 'quando', 'por que'.",
+        "Você pode aprender a fazer perguntas em Libras assistindo a vídeos que ensinam esses sinais."
+      ]
+    },
+    {
+      "tag": "libras_courses",
+      "patterns": [
+        "Onde posso aprender Libras?",
+        "Onde tem curso de Libras?",
+        "Como aprender Libras?",
+        "Quais são os melhores cursos de Libras?"
+      ],
+      "responses": [
+        "Você pode aprender Libras em escolas especializadas, instituições de ensino superior e cursos online.",
+        "Há muitos cursos online gratuitos e pagos onde você pode aprender Libras."
+      ]
+    },
+    {
+      "tag": "libras_resources",
+      "patterns": [
+        "Quais recursos existem para aprender Libras?",
+        "Quais são os melhores recursos para aprender Libras?",
+        "Onde encontro materiais para estudar Libras?",
+        "Você tem dicas de recursos para aprender Libras?"
+      ],
+      "responses": [
+        "Há vários recursos disponíveis como aplicativos, livros, vídeos no YouTube e sites dedicados ao ensino de Libras.",
+        "Aplicativos como Hand Talk e VLibras podem ser úteis para aprender Libras."
+      ]
+    },
+    {
+      "tag": "libras_community",
+      "patterns": [
+        "Existe uma comunidade de Libras?",
+        "Onde posso encontrar pessoas que usam Libras?",
+        "Como posso me conectar com a comunidade de Libras?",
+        "Há grupos de Libras online?"
+      ],
+      "responses": [
+        "Sim, há uma comunidade ativa de usuários de Libras tanto online quanto offline. Você pode encontrar grupos no Facebook, fóruns e eventos locais.",
+        "Participar de eventos e encontros de pessoas surdas pode ser uma ótima forma de se conectar com a comunidade de Libras."
+      ]
+    }
+  ]
+}

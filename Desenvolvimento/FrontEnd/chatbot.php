@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,3 +32,27 @@
     <script src="index.js"></script>
 </body>
 </html>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $mensagem = $_POST['mensagem'];
+
+    // Configurações da requisição
+    $url = 'http://127.0.0.1:5000/chat';
+    $data = array('mensagem' => $mensagem);
+
+    // Inicializa o cURL
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+
+    // Executa a requisição e captura a resposta
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    // Retorna a resposta como JSON
+    header('Content-Type: application/json');
+    echo $response;
+}
