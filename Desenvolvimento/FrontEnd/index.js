@@ -31,23 +31,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function obterRespostaDoServidor(mensagem) {
         try {
-            // Envia a mensagem para chatbot.php via POST
-            const response = await fetch('chatbot.php', {
+            const response = await fetch('process.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 body: new URLSearchParams({
                     'mensagem': mensagem
-                })
+                }).toString()
             });
+    
+            if (!response.ok) {
+                throw new Error('Erro na resposta do servidor');
+            }
+    
             const data = await response.json();
+            console.log(data.resposta);
             return data.resposta;
+    
         } catch (error) {
             console.error('Erro:', error);
             return 'Desculpe, ocorreu um erro.';
         }
     }
+    
 
     function criaBolhaBot() {
         const bolhaBot = document.createElement('p');

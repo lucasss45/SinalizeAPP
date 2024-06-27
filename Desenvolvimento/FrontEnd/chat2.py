@@ -7,13 +7,15 @@ import sys
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
-if (len(sys.argv) != 2):
+if len(sys.argv) < 2:
     print("Erro de uso")
     sys.exit(1)
 
-sentence = sys.argv[1]
+# Pega todos os argumentos a partir do índice 1 e une em uma única string
+sentence = " ".join(sys.argv[1:])
 if sentence == "quit":
     print("You're out!")
+    sys.exit(0)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

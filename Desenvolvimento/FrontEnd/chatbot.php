@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mensagem = $_POST['mensagem'];
 
     // Configurações da requisição
-    $url = 'http://127.0.0.1:5000/chat';
+    $url = 'http://localhost:8080/SinalizeAPP/Desenvolvimento/FrontEnd/process.php';
     $data = array('mensagem' => $mensagem);
 
     // Inicializa o cURL
