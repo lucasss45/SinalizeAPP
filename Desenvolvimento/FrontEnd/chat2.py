@@ -42,7 +42,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Lucas"
+bot_name = "Jarvis"
 
 sentence = tokenize(sentence)
 X = bag_of_words(sentence, all_words)
@@ -61,4 +61,4 @@ if prob.item() > 0.75:
         if tag == intent["tag"]:
             print(f"{bot_name}: {random.choice(intent['responses'])}")
 else:
-    print(f"{bot_name}: I do not understand...")
+    print(f"{bot_name}: Desculpe, acho que não entendi o que você quis dizer ou não possuo esse conhecimento no momento. Poderia reformular ou fazer outra pergunta, por favor?")

@@ -17,9 +17,10 @@
     <main class="main">
         <section class="chat container" id="chat">
             <p class="chat__bolha chat__bolha--bot">
-                Olá! Eu sou o assistente virtual do Time 001
-                Criado por Lucas Vizeu ~<br/><br/>
+                Olá! Eu sou o assistente educacional de Libras<br/>
+                Meu Nome é Jarvis<br/>
                 Como posso te ajudar?
+                <br/>
             </p>
         </section>
         <section class="entrada container">

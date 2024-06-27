@@ -12,4 +12,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 ?>
-//tirar header dar resposta stringzona sem json
