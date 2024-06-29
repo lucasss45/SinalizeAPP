@@ -1,0 +1,617 @@
+/* Definição das variáveis */
+:root {
+    --corPrincipal: #ffc200;
+    --corSecundaria: #ff9900;
+    --corTerciaria: #101010;
+    --corQuartiaria: #222222;
+    --corQuintenraia: #7b7b7b;
+    --corSextiaria: #ababab;
+    --corSeptiaria: #ffffff;
+    --fontePrimaria: 'Dela Gothic One', sans-serif;
+    --fonteSecundaria: 'Roboto', sans-serif;
+}
+
+/* Fonte Dela Gothic One */
+.dela-gothic-one-regular {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Fonte Roboto */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+  /* Reset CSS */
+* {
+    font-family: var(--fonteSecundaria);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do header */
+
+header {
+    height: fit-content; 
+}
+
+.HamburguerMenu{
+    width: 5vh;
+    height: 5vh;
+}
+
+.SearchBar{
+    padding: 2vh;
+    width: 100%;
+    height: 5vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--corQuartiaria);
+    border-radius: 4vh;
+    transition: 0.3s;
+}
+
+/* Estilos Aside */
+aside{
+    float: left;
+    height: 100%;
+}
+
+aside img{
+    width: 5vh;
+    height: 5vh;
+}
+
+.TradImg{
+    width: 7vh;
+    height: 7vh;
+}
+
+/* Main */
+h3 {
+    font-family: var(--fonteSecundaria);
+    color: var(--corQuintenraia) !important;
+}
+
+a {
+    border: solid 4vh none;
+}
+
+h2 {
+    font-family: 'Dela Gothic One', sans-serif;
+    color: var(--corQuintenraia) !important;
+}
+
+p {
+    font-family: 'Dela Gothic One', sans-serif;
+    color: var(--corQuintenraia) !important;
+    position: relative;
+    top: 2vh;
+}
+
+main {
+    margin-bottom: 3vh;
+    height: 100%;
+    padding: 2vh;
+    align-items: center;
+}
+
+.main {
+    position: relative;
+    left: 20.5%;
+    top: 10%;
+}
+
+.main p {
+    position: relative;
+    right: 10%;
+}
+
+main img {
+    max-width: 35vh;
+    max-height: 35vh;
+    margin: 5vh;
+    position: relative;
+    right: 1vh; 
+}
+
+main .inputs {
+    align-items: center;
+    padding: 5vh;
+    position: relative;
+    left: 20%;
+}
+
+main input {
+    margin: 1.5vh;
+    border-radius: 5vh;
+    border: solid 1.5px black;
+    padding: 1vh;
+    max-width: 50vh;
+    min-width: 20vh;
+}
+
+main .inputs input::placeholder {
+    color: black;
+}
+
+main button {
+    background-color: var(--corPrincipal);
+    font-size: x-large;
+    border-radius: 25px;
+    padding: 1vh;
+    max-width: 30vh;
+    min-width: 20vh;
+}
+
+main a {
+    position: relative;
+    left: 5vh;
+    font-size: large;
+}
+
+main p {
+    max-width: 60%;
+}
+/* Definições adicionais */
+
+#div0 {
+    max-height: max-content;
+}
+
+#div {
+    display: inline-flex;
+    width: auto;
+    max-height: 7vh;
+}
+
+#div2 {
+    position: relative;
+    left: 60%;
+    bottom: 30%;
+}
+
+/* Switches */
+.switch {
+    display: none;
+}
+
+.switch__container {
+    position: relative;
+    border: 4vh;
+    background-color: var(--corSextiaria);
+    border-radius: 10px;
+    max-width: min-content;
+    max-height: min-content;
+    min-width: 60%;
+    padding: 1vh;
+}
+
+.switch + label {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch--shadow + label {
+    padding: 0.5vh;
+    max-width: 10vh;
+    max-height: 5vh;
+    width: relative;
+    height: relative;
+    min-width: 2vh;
+    min-height: 5vh;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: '';
+}
+
+.switch--shadow + label:before {
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: all 0.4s;
+}
+
+.switch--shadow + label:after {
+    width: 5vh;
+    background-color: #fff;
+    border-radius: 100%;
+    transition: all 0.4s;
+}
+
+.switch--shadow:checked + label:before {
+    background-color: #8ce196;
+}
+
+.switch--shadow:checked + label:after {
+    transform: translateX(4.6vh);
+}
+
+#Nascimento {
+    width: 36.5vh;
+}
+
+/* Estilos do footer */
+footer {
+    height: fit-content;
+    width: 100%;
+    padding: 3vh;
+}
+
+footer img {
+    height: 6vh;
+    width: 6vh;
+}
+
+/* Estilos do formulário de login */
+.logo-login {
+    height: 20vh;
+    width: 20vh;
+}
+
+.logo-login-title {
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+.campoLogin {
+    border: solid var(--corSextiaria) 0.2vh;
+    border-radius: 10vh;
+    padding: 1.5vh;
+    height: 6vh;
+}
+
+
+.card-img-top {
+    width: 2vh;
+    height: 15vh;
+}
+
+.welcome-message {
+    font-family: var(--fonteSecundaria);
+    color: var(--corQuintenraia);
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.forgot-link {
+    color: var(--corQuintenraia);
+    text-align: center;
+    display: block;
+    margin-top: 1vh;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    background: var(--corPrincipal);
+    background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
+    border: none;
+    color: var(--corTerciaria);
+    font-weight: 700;
+    border-radius: 10vh;
+    padding: 1.5vh;
+    width: 50%;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: var(--corSecundaria);
+}
+
+.btn-header {
+    background: linear-gradient(90deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
+    border: none;
+    color: var(--corTerciaria);
+    font-weight: 500;
+    border-radius: 10vh;
+    padding: 2vh 3vh; 
+    cursor: pointer;
+    margin-right: 3vh;
+    justify-content: space-between;
+}
+
+.contato {
+    color: var(--corTerciaria);
+    text-align: center; /* Texto centralizado */
+    font-family: var(--fonteSecundaria)
+}
+
+.contato h3{
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    line-height: 1.5; 
+}
+
+.contato a {
+    display: inline-block;
+    padding: 1vh 3vh;
+    text-decoration: none; 
+    font-size: 3.5vh; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    margin-bottom: 5vh;
+}
+
+.campoLogin {
+    border: solid var(--corSextiaria) 0.2vh;
+    border-radius: 10vh;
+    padding: 1.5vh;
+    height: 6vh;
+    margin-bottom: 1vh;
+}
+
+.login-message{
+    text-align: center;
+}
+
+.comentarios-section {
+    padding: 2vh;
+}
+
+.comentarios-section h4 {
+    font-family: var(--fontePrimaria);
+    color: var(--corQuintenraia) !important;
+}
+
+.comentarios-section .comentario {
+    text-align: left;
+    margin-bottom: 4vh;
+}
+
+.comentarios-section .comentario .info span {
+    font-family: var(--fontePrimaria);
+}
+
+.comentarios-section .comentario p {
+    font-family: var(--fonteSecundaria);
+    margin-top: 1vh;
+}
+
+.comentario-form {
+    margin-bottom: 4vh;
+}
+
+.comentario-form form {
+    text-align: center;
+}
+
+.comentario-form form textarea {
+    width: 100%;
+    padding: 2vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 1vh;
+    resize: vertical;
+}
+
+.comentario-form form input[type="submit"] {
+    background-color: var(--corPrincipal);
+    color: var(--corTerciaria);
+    font-family: var(--fontePrimaria);
+    font-size: 3vh;
+    border: none;
+    border-radius: 10vh;
+    padding: 2vh 4vh;
+    cursor: pointer;
+}
+
+
+.input-group {
+    gap: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .input-group {
+        gap: 5vh; 
+    }
+}
+
+.comunicado h3,
+.comunicado a,
+.comunicado p {
+    justify-content: center;
+    display: flex;
+    font-family: var(--fontePrimaria);
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+    margin: 2vh;
+}
+
+.textarea-container textarea {
+    width: 80%;
+    padding: 1vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 1vh;
+    resize: vertical;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    margin-bottom: 1vh;
+}
+
+.select-container label {
+    font-family: var(--fontePrimaria);
+    font-size: larger;
+}
+
+.comentario-form form select {
+    background-color: var(--corPrincipal);
+    color: var(--corTerciaria);
+    font-family: var(--fontePrimaria);
+    font-size: larger;
+    border: none;
+    border-radius: 0.5vh;
+    padding: 1vh 2vh;
+    cursor: pointer;
+}
+
+.ProfileButton{
+    height: 5vh;
+    width: 5vh;
+    float: right;
+}
+
+.searchicon{
+    margin-top: 1vh;
+    width: 6.5vh;
+}
+
+.footer {
+    background-color: #101010;
+    color: #ffffff;
+    padding: 5vh 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer_left {
+    flex: 1;
+    text-align: left;
+    padding: 0 2rem;
+  }
+  
+  .footer_right {
+    text-align: right;
+  }
+  
+  .c-nav-tool_title {
+    font-size: 4vh;
+    color: #ffc200;
+    margin-bottom: 2vh;
+    font-family: var(--fontePrimaria)
+  }
+  
+  .c-nav-tool_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .c-link {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+    font-size: 3vh;
+    cursor: pointer;
+  }
+  
+  .footer_text {
+    font-size: 4.5vh;
+    font-style: italic; /* adicionei essa linha para manter o estilo itálico no hover */
+    line-height: 1.5;
+    color: var(--corSeptiaria); 
+    text-align: left;
+    transition: 0.3s;
+  }
+  
+  .footer_text:hover {
+    color: var(--corPrincipal)!important;
+    font-size: 5vh; 
+  }

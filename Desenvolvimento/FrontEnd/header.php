@@ -69,7 +69,8 @@ session_start();
             </a>
         </div>
         <div class="row mb-3">
-            <a href="chatbot.php">
+            
+            <a href="chatbot/chatbot.php">
                 <img class="TradImg" src="Imagens/ChatBotIcon.png" alt="Botão da função de chatbot">
             </a>
         </div>

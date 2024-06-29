@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatPlus</title>
-    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="../css/chat.css">
+
 </head>
 <body>
     <header class="cabecalho container">
-        <img src="./img/logo-chatbot.svg" alt="Logo Chatbot">
+        <img src="../img/logo-chatbot.svg" alt="Logo Chatbot">
         <div class="cabecalho__acoes">
             <a href="#" onclick="limparConversa()">Limpar Conversa</a>
         </div>
@@ -39,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mensagem = $_POST['mensagem'];
 
     // Configurações da requisição
-    $url = 'http://localhost:8080/SinalizeAPP/Desenvolvimento/FrontEnd/process.php';
+    $url = 'http://localhost:8080/SinalizeAPP/Desenvolvimento/FrontEnd/Chatbot/process.php';
     $data = array('mensagem' => $mensagem);
 
     // Inicializa o cURL

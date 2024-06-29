@@ -3,6 +3,10 @@
     {
       "tag": "greeting",
       "patterns": [
+        "Opa",
+        "Falai tu",
+        "Tranquilo ai",
+        "Suave",
         "Oi",
         "Olá",
         "Como você está?",
@@ -27,8 +31,14 @@
     },
     {
       "tag": "agradecimento",
-      "patterns": ["Obrigado", "Muito obrigado", "Isso foi útil", "Valeu!"],
-      "responses": ["Fico feliz em ajudar!", "De nada!", "À disposição"]
+      "patterns": ["Obrigado", "Muito obrigado", "Isso foi útil", "Valeu!", "Você Ajudou", "Mt obg"],
+      "responses": [
+        "Fico feliz em ajudar!",
+        "De nada!",
+        "À disposição",
+        "Sempre que precisar!",
+        "Estou aqui para ajudar!"
+      ]
     },
     {
       "tag": "libras_introduction",
@@ -40,7 +50,8 @@
       ],
       "responses": [
         "Libras é a Língua Brasileira de Sinais, utilizada pela comunidade surda no Brasil para comunicação.",
-        "A Língua Brasileira de Sinais, ou Libras, é um sistema linguístico de natureza visual-motora."
+        "A Língua Brasileira de Sinais, ou Libras, é um sistema linguístico de natureza visual-motora.",
+        "Libras é reconhecida como meio legal de comunicação e expressão no Brasil desde 2002."
       ]
     },
     {
@@ -53,7 +64,8 @@
       ],
       "responses": [
         "O alfabeto em Libras consiste em gestos com as mãos representando cada letra do alfabeto.",
-        "Você pode aprender o alfabeto em Libras através de imagens e vídeos que mostram cada sinal."
+        "Você pode aprender o alfabeto em Libras através de imagens e vídeos que mostram cada sinal.",
+        "São 26 letras no alfabeto de Libras, cada uma representada por um sinal manual único."
       ]
     },
     {
@@ -66,7 +78,8 @@
       ],
       "responses": [
         "Os números em Libras são representados por sinais específicos com as mãos.",
-        "Você pode aprender os números em Libras através de vídeos que demonstram cada sinal numérico."
+        "Você pode aprender os números em Libras através de vídeos que demonstram cada sinal numérico.",
+        "Os números em Libras vão de 0 a 9, com gestos distintos para cada dígito."
       ]
     },
     {
@@ -75,11 +88,12 @@
         "Como dizer oi em Libras?",
         "Como saudar em Libras?",
         "Como dizer bom dia em Libras?",
-        "Como cumprimento alguém em Libras?"
+        "Como cumprimentar alguém em Libras?"
       ],
       "responses": [
         "Para dizer 'oi' em Libras, você pode usar o sinal específico que é um aceno de mão.",
-        "Você pode aprender saudações em Libras através de vídeos que mostram os sinais de cumprimento."
+        "Você pode aprender saudações em Libras através de vídeos que mostram os sinais de cumprimento.",
+        "Em Libras, há diferentes formas de cumprimentar, dependendo do contexto e da familiaridade com a pessoa."
       ]
     },
     {
@@ -92,7 +106,8 @@
       ],
       "responses": [
         "Para fazer perguntas em Libras, você pode usar sinais específicos para palavras como 'o que', 'quem', 'onde', 'quando', 'por que'.",
-        "Você pode aprender a fazer perguntas em Libras assistindo a vídeos que ensinam esses sinais."
+        "Você pode aprender a fazer perguntas em Libras assistindo a vídeos que ensinam esses sinais.",
+        "Fazer perguntas em Libras envolve expressões faciais e sinais manuais claros para transmitir o significado corretamente."
       ]
     },
     {
@@ -105,7 +120,8 @@
       ],
       "responses": [
         "Você pode aprender Libras em escolas especializadas, instituições de ensino superior e cursos online.",
-        "Há muitos cursos online gratuitos e pagos onde você pode aprender Libras."
+        "Há muitos cursos online gratuitos e pagos onde você pode aprender Libras.",
+        "Instituições como universidades e centros de educação oferecem cursos de Libras com certificação reconhecida."
       ]
     },
     {
@@ -118,7 +134,8 @@
       ],
       "responses": [
         "Há vários recursos disponíveis como aplicativos, livros, vídeos no YouTube e sites dedicados ao ensino de Libras.",
-        "Aplicativos como Hand Talk e VLibras podem ser úteis para aprender Libras."
+        "Aplicativos como Hand Talk e VLibras podem ser úteis para aprender Libras.",
+        "Livros e materiais impressos também são recursos valiosos para estudar Libras de forma mais aprofundada."
       ]
     },
     {
@@ -131,7 +148,88 @@
       ],
       "responses": [
         "Sim, há uma comunidade ativa de usuários de Libras tanto online quanto offline. Você pode encontrar grupos no Facebook, fóruns e eventos locais.",
-        "Participar de eventos e encontros de pessoas surdas pode ser uma ótima forma de se conectar com a comunidade de Libras."
+        "Participar de eventos e encontros de pessoas surdas pode ser uma ótima forma de se conectar com a comunidade de Libras.",
+        "Existem associações e grupos organizados que promovem a cultura e o uso de Libras em diferentes regiões do Brasil."
+      ]
+    },
+    {
+      "tag": "libras_history",
+      "patterns": [
+        "Qual é a história de Libras?",
+        "Como Libras foi desenvolvida?",
+        "Quem criou Libras?",
+        "Por que Libras é importante?"
+      ],
+      "responses": [
+        "Libras é o resultado da evolução natural de línguas de sinais trazidas pelos franceses no século XIX, adaptadas às comunidades surdas no Brasil.",
+        "A história de Libras está ligada à luta por reconhecimento e direitos das pessoas surdas no Brasil.",
+        "A criação e desenvolvimento de Libras envolveu a comunidade surda e especialistas em linguística."
+      ]
+    },
+    {
+      "tag": "libras_culture",
+      "patterns": [
+        "Qual é a cultura de Libras?",
+        "Libras tem uma cultura própria?",
+        "Como é a cultura surda no Brasil?",
+        "O que representa a cultura surda?"
+      ],
+      "responses": [
+        "A cultura surda no Brasil é rica e diversa, com suas próprias tradições, expressões artísticas e valores compartilhados através de Libras.",
+        "Libras não é apenas uma língua, mas um meio vital para a transmissão de conhecimento e preservação da identidade surda.",
+        "A cultura de Libras abrange desde eventos sociais até manifestações artísticas exclusivas da comunidade surda."
+      ]
+    },
+    {
+      "tag": "libras_challenges",
+      "patterns": [
+        "Quais são os desafios de aprender Libras?",
+        "Por que aprender Libras pode ser difícil?",
+        "Quais dificuldades as pessoas enfrentam ao aprender Libras?",
+        "O que torna Libras um desafio?"
+      ],
+      "responses": [
+        "Alguns desafios ao aprender Libras incluem a compreensão da estrutura gramatical visual, a adaptação a diferentes dialetos regionais e a familiarização com expressões faciais que complementam os sinais.",
+        "A falta de fluência em Libras pode dificultar a comunicação eficaz entre surdos e ouvintes, exigindo paciência e prática para superar barreiras linguísticas.",
+        "A aprendizagem de Libras requer não apenas domínio dos sinais, mas também compreensão da cultura surda e dos contextos sociais onde a língua é utilizada."
+      ]
+    },
+    {
+      "tag": "libras_importance",
+      "patterns": [
+        "Por que é importante aprender Libras?",
+        "Qual a importância de aprender Libras?",
+        "Por que todos deveriam aprender Libras?",
+        "O que Libras pode oferecer?"
+      ],
+      "responses": [
+        "Aprender Libras promove inclusão social, facilita a comunicação entre surdos e ouvintes, e valoriza a diversidade linguística e cultural.",
+        "Conhecer Libras amplia o entendimento sobre as necessidades e direitos das pessoas surdas, promovendo uma sociedade mais inclusiva e acessível.",
+        "Libras é fundamental para garantir que todos tenham igualdade de acesso à informação e participação na vida social, educacional e profissional."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Obrigado",
+        "Obrigada",
+        "Valeu",
+        "Agradecido"
+      ],
+      "responses": [
+        "De nada!",
+        "Por nada!",
+        "Estou aqui para ajudar!",
+        "Sempre às ordens!"
+      ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Desculpe, não entendi.",
+        "Poderia repetir, por favor?",
+        "Não tenho certeza se entendi o que você quis dizer."
       ]
     }
   ]
