@@ -1,5 +1,4 @@
 <?php
-session_start();
 include 'header.php';
 ?>
 
@@ -17,7 +16,7 @@ include 'header.php';
                 </div>
                 <input type="submit" name="submit" value="Enviar">
                 <select name="topico">
-                    <option value="">--Tópico--</option>
+                    <option value="">Tópico</option>
                     <option value="Avaliações">Avaliações</option>
                     <option value="Sugestões">Sugestões</option>
                     <option value="Dúvidas">Dúvidas</option>

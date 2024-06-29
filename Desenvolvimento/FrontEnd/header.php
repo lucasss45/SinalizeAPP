@@ -1,4 +1,8 @@
-<!DOCTYPE html:5>
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     
@@ -8,8 +12,8 @@
     <!-- CSS LOCAL -->
     <link rel="stylesheet" href="style.css">
 
-     <!-- SCRIPT LOCAL -->
-     <script src="script.js"></script>
+    <!-- SCRIPT LOCAL -->
+    <script src="script.js"></script>
    
     <!-- FONTES -->
     <style>
@@ -34,12 +38,18 @@
             <input class="SearchBar" type="text" placeholder="Pesquisar aulas">
         </div>
         <div class="col-lg-3 d-flex justify-content-end align-items-center">
-            <a href="CadastroUsuario/Login.php" class="btn-link">
-                <input type="button" class="btn-header" value="Login" onclick="msg()">
-            </a>
-            <a href="CadastroUsuario/Cadastro.php" class="btn-link">
-                <input type="button" class="btn-header" value="Cadastro" onclick="msg()">
-            </a>
+            <?php if (isset($_SESSION['username'])): ?>
+                <span class="navbar-text">
+                     <?php echo htmlspecialchars($_SESSION['username']); ?>
+                </span>
+            <?php else: ?>
+                <a href="CadastroUsuario/Login.php" class="btn-link">
+                    <input type="button" class="btn-header" value="Login" onclick="msg()">
+                </a>
+                <a href="CadastroUsuario/Cadastro.php" class="btn-link">
+                    <input type="button" class="btn-header" value="Cadastro" onclick="msg()">
+                </a>
+            <?php endif; ?>
         </div>
     </header>
     <aside class="p-3">
@@ -54,23 +64,25 @@
             </a>
         </div>
         <div class="row mb-3">
-            <a href="chatbot.php">
-                <img class="TradImg" src="Imagens/ChatBotIcon.png" alt="Botão da função de tradutor">
-            </a>
-        </div>
-        <div class="row mb-3">
             <a href="Tradutor.php">
                 <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
             </a>
         </div>
         <div class="row mb-3">
+            <a href="chatbot.php">
+                <img class="TradImg" src="Imagens/ChatBotIcon.png" alt="Botão da função de chatbot">
+            </a>
+        </div>
+        <div class="row mb-3">
             <a href="Comunidade.php">
-                <img src="Imagens/Comunittyicon.png" alt="Botão da função de tradutor">
+                <img src="Imagens/Comunittyicon.png" alt="Botão da função de comunidade">
             </a>
         </div>
         <div class="row mb-3">
             <a href="Pesquisa.php">
-                <img class="searchicon" src="Imagens/PesquisaIcone.png" alt="Botão da função de tradutor">
+                <img class="searchicon" src="Imagens/PesquisaIcone.png" alt="Botão da função de pesquisa">
             </a>
         </div>
-</aside>
+    </aside>
+</body>
+</html>
