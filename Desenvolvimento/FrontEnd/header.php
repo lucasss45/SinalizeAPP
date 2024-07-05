@@ -59,11 +59,6 @@ session_start();
             </a>
         </div>
         <div class="row mb-3">
-            <a href="Dicionario.php">
-                <img src="Imagens/DicionarioImg.png" alt="Botão da página de dicionário">
-            </a>
-        </div>
-        <div class="row mb-3">
             <a href="Tradutor.php">
                 <img class="TradImg" src="Imagens/Tradutor.png" alt="Botão da função de tradutor">
             </a>
@@ -85,5 +80,3 @@ session_start();
             </a>
         </div>
     </aside>
-</body>
-</html>
